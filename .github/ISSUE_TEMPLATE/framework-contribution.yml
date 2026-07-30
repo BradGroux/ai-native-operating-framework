@@ -1,0 +1,57 @@
+name: Framework contribution
+description: Propose a change, example, question, or material clarification.
+title: "Contribution: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Follow the repository contribution SOP. Do not include private, confidential, unsafe, or improperly licensed information.
+  - type: dropdown
+    id: classification
+    attributes:
+      label: Contribution class
+      options:
+        - Material framework or governance change
+        - Example contribution or revision
+        - Editorial correction
+        - Project or review record
+        - Question or material clarification
+    validations:
+      required: true
+  - type: textarea
+    id: need
+    attributes:
+      label: Need
+      description: What problem, ambiguity, evidence, or changed condition should this address?
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Requested outcome
+      description: What decision or repository change are you requesting?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence, sources, and limitations
+      description: Identify supporting evidence, relevant sources, rights, assistance, assumptions, and unresolved limitations.
+    validations:
+      required: true
+  - type: textarea
+    id: affected
+    attributes:
+      label: Affected material
+      description: Identify the framework documents, examples, decisions, or records that may need review.
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Contribution assurances
+      options:
+        - label: I have the right to submit this material under the MIT License.
+          required: true
+        - label: I removed private, confidential, credential, unsafe, and improperly licensed information.
+          required: true
+        - label: I distinguished framework requirements from domain-specific or implementation choices.
+          required: true

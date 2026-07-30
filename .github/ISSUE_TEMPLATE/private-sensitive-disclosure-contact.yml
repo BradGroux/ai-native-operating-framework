@@ -1,0 +1,15 @@
+name: Private sensitive-disclosure contact request
+description: Ask the founding steward to establish a private reporting channel.
+title: "Private sensitive-disclosure contact requested"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This public request only alerts the founding steward that a private reporting route is needed. Do not include credentials, names, evidence, contact details, exploit instructions, or other sensitive information. Monitor this issue while the steward enables or identifies a repository-controlled private route.
+  - type: checkboxes
+    id: public-safety
+    attributes:
+      label: Public-request safety
+      options:
+        - label: I have not included sensitive details in this public request.
+          required: true

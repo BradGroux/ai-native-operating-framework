@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security or sensitive disclosure
+    url: https://github.com/bradgroux/ai-native-operating-framework/security/policy
+    about: Review the private reporting routes before sharing sensitive details.

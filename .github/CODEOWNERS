@@ -1,0 +1,14 @@
+# The founding steward reviews all repository changes until governance delegates
+# ownership to additional maintainers.
+* @BradGroux
+
+# These paths carry canonical meaning, accepted rationale, contribution
+# authority, release controls, or executable repository safeguards.
+/framework/ @BradGroux
+/decisions/ @BradGroux
+/examples/ @BradGroux
+/GOVERNANCE.md @BradGroux
+/CONTRIBUTING.md @BradGroux
+/SECURITY.md @BradGroux
+/.github/ @BradGroux
+/scripts/ @BradGroux

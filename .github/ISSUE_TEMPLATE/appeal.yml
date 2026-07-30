@@ -1,0 +1,48 @@
+name: Contribution decision appeal
+description: Appeal a contribution triage or decision under the contribution SOP.
+title: "Appeal: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not repeat sensitive material from the original contribution. Identify the disputed record and provide only the context needed for review.
+  - type: input
+    id: disputed-record
+    attributes:
+      label: Disputed contribution or decision
+      description: Link the relevant issue, pull request, or recorded decision.
+    validations:
+      required: true
+  - type: dropdown
+    id: ground
+    attributes:
+      label: Appeal ground
+      options:
+        - The contribution was materially misclassified
+        - Relevant evidence or an accepted framework requirement was not considered
+        - The decision was made outside the stated authority
+        - The documented contribution process was not followed
+        - The recorded reason does not support the disposition
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Supporting evidence
+      description: State the evidence that supports the appeal without disclosing protected information.
+    validations:
+      required: true
+  - type: textarea
+    id: resolution
+    attributes:
+      label: Requested resolution
+      description: State whether you seek revision, reopening, or another documented outcome.
+    validations:
+      required: true
+  - type: checkboxes
+    id: acknowledgment
+    attributes:
+      label: Acknowledgment
+      options:
+        - label: I understand that an appeal does not authorize the proposed change or suspend safety, rights, privacy, or other containment.
+          required: true

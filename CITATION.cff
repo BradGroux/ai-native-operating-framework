@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use the AI-Native Operating Framework, please cite it using this metadata."
+title: "AI-Native Operating Framework"
+authors:
+  - family-names: "Groux"
+    given-names: "Brad"
+    alias: "BradGroux"
+repository-code: "https://github.com/bradgroux/ai-native-operating-framework"
+url: "https://github.com/bradgroux/ai-native-operating-framework"
+license: MIT
+version: 1.0.0
+date-released: 2026-07-30
+abstract: >-
+  A business operating framework and method for defining, documenting,
+  applying, and improving the standards, procedures, and shared operating
+  memory through which people and AI perform work.
+keywords:
+  - business operations
+  - operating framework
+  - standard operating procedures
+  - organizational memory
+  - knowledge management
+  - artificial intelligence
