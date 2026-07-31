@@ -31,6 +31,12 @@ is established, the founding steward:
 - records dissent and unresolved risk; and
 - determines when governance should expand.
 
+The framework is developed through
+[Digital Meld](https://digitalmeld.io)'s research arm, alongside the related
+[AI Dev Days](https://github.com/bradgroux/ai-dev-days) research and education
+initiative. These affiliations do not grant either organization decision
+authority outside this governance process.
+
 Stewardship does not create professional authority over the domains represented
 by framework examples.
 
