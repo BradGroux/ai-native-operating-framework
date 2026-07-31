@@ -2,21 +2,16 @@
 
 All material framework releases and repository changes will be recorded here.
 
-## Unreleased
-
-### Changed
-
-- Documented and linked the framework's place within
-  [Digital Meld](https://digitalmeld.io)'s research arm and its relationship to
-  the [AI Dev Days](https://github.com/bradgroux/ai-dev-days) research and
-  education initiative, without changing framework governance or authority.
-
 ## 1.0.0 — 2026-07-30
 
 ### Added
 
 - Canonical repository hierarchy for framework, examples, decisions, and
   project records.
+- Documented and linked the framework's place within
+  [Digital Meld](https://digitalmeld.io)'s research arm and its relationship to
+  the [AI Dev Days](https://github.com/bradgroux/ai-dev-days) research and
+  education initiative, without changing framework governance or authority.
 - Charter, operating framework, SOP content standard, shared operating memory
   standard, standards maintenance method, and approved glossary.
 - Eleven complete illustrative examples.
