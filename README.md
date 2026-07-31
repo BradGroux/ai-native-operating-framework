@@ -8,6 +8,17 @@ The framework is about business operations. It does not prescribe software,
 schemas, protocols, agent harnesses, a universal business lifecycle, or a
 machine-specific representation.
 
+## Research and Stewardship
+
+The AI-Native Operating Framework is developed as part of
+[Digital Meld](https://digitalmeld.io)'s research arm.
+[AI Dev Days](https://github.com/bradgroux/ai-dev-days) is a related research
+and education initiative within the same research arm.
+
+These relationships provide research, application, teaching, and learning
+context. Neither Digital Meld nor AI Dev Days may redefine the framework
+outside its documented contribution and governance processes.
+
 ## Start Here
 
 Read the canonical framework in this order:

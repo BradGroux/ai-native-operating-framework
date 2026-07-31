@@ -126,9 +126,13 @@ product.
 
 ## Relationship to Education and Commercial Work
 
-AI Dev Days may teach the framework. Digital Meld and other organizations may
-apply it commercially. Examples, educators, consultants, and service providers
-may contribute useful experience.
+The framework is developed as part of
+[Digital Meld](https://digitalmeld.io)'s research arm.
+[AI Dev Days](https://github.com/bradgroux/ai-dev-days) is a related research
+and education initiative within the same research arm. AI Dev Days may teach
+the framework. Digital Meld and other organizations may apply it commercially.
+Examples, educators, consultants, and service providers may contribute useful
+experience.
 
 None of them owns the meaning of the framework by virtue of teaching, applying,
 or commercializing it. Changes to the framework follow its documented

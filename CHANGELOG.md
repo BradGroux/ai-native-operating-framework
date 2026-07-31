@@ -2,6 +2,15 @@
 
 All material framework releases and repository changes will be recorded here.
 
+## Unreleased
+
+### Changed
+
+- Documented and linked the framework's place within
+  [Digital Meld](https://digitalmeld.io)'s research arm and its relationship to
+  the [AI Dev Days](https://github.com/bradgroux/ai-dev-days) research and
+  education initiative, without changing framework governance or authority.
+
 ## 1.0.0 — 2026-07-30
 
 ### Added
