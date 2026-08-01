@@ -2,9 +2,9 @@
 
 **Status:** Accepted and dispositioned<br>
 **Decision date:** 2026-07-30<br>
-**Accountable owner:** Brad Groux<br>
+**Accountable role:** Founding steward<br>
 **Review scope:** Shared operating memory version 1.0.0 extension<br>
-**Sources:** [TARS application review](shared-operating-memory-independent-application-review-2026-07-30-a.md) and [Ava adversarial review](shared-operating-memory-independent-adversarial-review-2026-07-30-b.md)
+**Sources:** [Independent application review](shared-operating-memory-independent-application-review-2026-07-30.md) and [independent adversarial review](shared-operating-memory-independent-adversarial-review-2026-07-30.md)
 
 ## Determination
 
@@ -12,11 +12,8 @@ The two independent, source-bounded AI reviews are credible evidence that the
 shared operating memory extension is understandable, internally consistent,
 technology-neutral, and applicable without an author briefing.
 
-The reports are accepted as:
-
-- an independent application review by **TARS**, a Buzz AI agent; and
-- an independent adversarial consistency and publication review by **Ava**, a
-  Buzz AI agent.
+The reports are accepted as an independent AI-assisted application review and
+an independent AI-assisted adversarial consistency and publication review.
 
 They are not represented as human review, organizational approval,
 professional advice, domain validation, legal review, privacy review,
@@ -29,14 +26,14 @@ framework meaning and do not require a canonical framework correction.
 
 ## Review Results
 
-| Reviewer | Review type | Verdict | Blockers | Material | Editorial | Observations |
+| Review role | Review type | Verdict | Blockers | Material | Editorial | Observations |
 |---|---|---|---:|---:|---:|---:|
-| TARS | Independent application review | Usable as written | 0 | 0 | 0 | 3 |
-| Ava | Independent adversarial consistency and publication review | Pass | 0 | 0 | 0 | 3 |
+| Application reviewer | Independent application review | Usable as written | 0 | 0 | 0 | 3 |
+| Adversarial reviewer | Independent adversarial consistency and publication review | Pass | 0 | 0 | 0 | 3 |
 
-## TARS Findings Disposition
+## Application Review Findings Disposition
 
-### A-O1 — Federated memory fits a no-Git, multi-system organization
+### APP-O1 — Federated memory fits a no-Git, multi-system organization
 
 **Disposition:** Accepted; no framework change.
 
@@ -49,7 +46,7 @@ recovery meaning.
 This supports the accepted boundary that the framework defines a business
 capability rather than a technical memory architecture.
 
-### A-O2 — Example 11 is concrete without redefining the canonical practice
+### APP-O2 — Example 11 is concrete without redefining the canonical practice
 
 **Disposition:** Accepted; no framework change.
 
@@ -60,7 +57,7 @@ scenario-specific choices.
 
 The example remains explanatory and does not amend the canonical standard.
 
-### A-O3 — Unresolved organizational decisions remain visible
+### APP-O3 — Unresolved organizational decisions remain visible
 
 **Disposition:** Accepted; no framework change.
 
@@ -73,9 +70,9 @@ answers.
 That result is intentional. False precision in these areas would weaken the
 framework.
 
-## Ava Findings Disposition
+## Adversarial Review Findings Disposition
 
-### B-O1 — The canonical standard is not an organizational retention or access policy
+### ADV-O1 — The canonical standard is not an organizational retention or access policy
 
 **Disposition:** Accepted; no framework change.
 
@@ -86,19 +83,19 @@ implement enforceable controls.
 
 This limitation is already explicit and remains appropriate.
 
-### B-O2 — Example 11 adds specificity without silently amending the framework
+### ADV-O2 — Example 11 adds specificity without silently amending the framework
 
 **Disposition:** Accepted; no framework change.
 
-Ava independently reached the same conclusion as TARS: the example is
-operationally useful, but its repository and procedure choices remain bounded
-to the scenario.
+The adversarial review independently reached the same conclusion as the
+application review: the example is operationally useful, but its repository and
+procedure choices remain bounded to the scenario.
 
 Agreement between the application and adversarial reviews increases confidence
 that readers can distinguish framework requirements from implementation
 examples.
 
-### B-O3 — Point-in-time project records remain distinguishable
+### ADV-O3 — Point-in-time project records remain distinguishable
 
 **Disposition:** Accepted; navigation and current status updated.
 
@@ -130,10 +127,10 @@ not create authority.
 
 ### 3. Federated operation is practical
 
-TARS produced a complete multi-system practice before reading the example
-structures. Ava separately demonstrated that adversarial cases can be resolved
-across distributed authoritative systems. Neither required Git or one memory
-repository.
+The application review produced a complete multi-system practice before reading
+the example structures. The adversarial review separately demonstrated that
+adversarial cases can be resolved across distributed authoritative systems.
+Neither required Git or one memory repository.
 
 ### 4. People and AI receive the same business guidance
 
@@ -158,7 +155,8 @@ different and the federated pattern suitable for a no-Git organization.
 
 The accepted public reports:
 
-- identify TARS and Ava as Buzz AI agents;
+- identify the AI-assisted review method and role without naming a person,
+  agent, model, tool, or internal platform;
 - state that the reviews are not human or domain validation;
 - use repository-relative references;
 - contain no private source material;
@@ -175,7 +173,7 @@ The reviewers accurately recorded the limits of their environments:
 
 - neither independently completed a real Mermaid render;
 - neither independently completed formal CFF schema validation;
-- Ava's GitHub metadata check was limited to local parsing; and
+- the adversarial review's GitHub metadata check was limited to local parsing;
 - neither reviewed a live organizational implementation or exercised real
   access, deletion, outage, backup, recovery, or migration controls.
 
@@ -233,8 +231,8 @@ framework-design decisions.
 
 - [Shared operating memory extension specification](../specifications/shared-operating-memory-extension.md)
 - [Shared operating memory extension review](shared-operating-memory-extension-review-2026-07-30.md)
-- [Independent review prompt](shared-operating-memory-independent-review-prompt.md)
-- [TARS application review](shared-operating-memory-independent-application-review-2026-07-30-a.md)
-- [Ava adversarial review](shared-operating-memory-independent-adversarial-review-2026-07-30-b.md)
+- [Independent review prompt](shared-operating-memory-independent-review-prompt-2026-07-30.md)
+- [Independent application review](shared-operating-memory-independent-application-review-2026-07-30.md)
+- [Independent adversarial review](shared-operating-memory-independent-adversarial-review-2026-07-30.md)
 - [ADR-007 — Shared operating memory](../../decisions/0007-shared-operating-memory.md)
 - [Shared operating memory standard](../../framework/shared-operating-memory-standard.md)

@@ -1,8 +1,8 @@
 # Independent Framework Application Test Disposition
 
 **Status:** Complete<br>
-**Date:** 2026-07-30<br>
-**Accountable owner:** Framework owner<br>
+**Decision date:** 2026-07-30<br>
+**Accountable role:** Framework owner<br>
 **Source:** [Independent framework application test](independent-framework-application-test-2026-07-30.md)
 
 > **Scope note:** This disposition predates the shared operating memory
@@ -28,8 +28,8 @@ The result supports the following conclusions:
 - accountable human ownership and bounded AI participation remain clear;
 - and no blocker or contradiction was found in the core.
 
-The source report was reviewed before repository inclusion. Reviewer identity
-was generalized, and the report contains no real person, organization, vendor,
+The source report was reviewed before repository inclusion. Reviewer attribution
+was generalized to a role, and the report contains no real person, organization, vendor,
 transaction, contact detail, credential, confidential source material, or
 private operating record.
 

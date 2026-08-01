@@ -1,6 +1,8 @@
-# Fresh Post-Fix Review
+# Independent Framework Post-Fix Review
 
-**Review status:** Complete independent review<br>
+**Status:** Complete independent review<br>
+**Review date:** 2026-07-30<br>
+**Review role:** Independent AI reviewer<br>
 **Repository reviewed:** AI-Native Operating Framework repository<br>
 **Repository state:** Pre-publication post-fix snapshot; private commit
 identifier removed during public-history sanitization<br>
@@ -240,7 +242,7 @@ For the simulated material clarification rejected as “already addressed”:
 4. **Available dispositions:** Uphold, Revise, Reopen, or Defer (`CONTRIBUTING.md:414-420`).
 5. **Preservation and communication:** The original decision remains; the appeal record identifies deciding authority, review scope, evidence considered, reason, date, and resulting action. The appeal and original remain visible together, and the contributor and affected maintainers receive the disposition (`CONTRIBUTING.md:409-425`; `GOVERNANCE.md:173-182`).
 6. **Effect while pending:** The appeal does not authorize the proposed change and does not suspend safety, rights, privacy, or other containment (`CONTRIBUTING.md:421-425`).
-7. **Current operational state:** External intake is **not operational**. The SOP names no destination and expressly says intake remains non-operational until the destination, acknowledging maintainer, receipt confirmation, and alternate route are published (`CONTRIBUTING.md:331-347`). Governance states the same pre-publication gate (`GOVERNANCE.md:162-165`), and the disposition records that no public channel is configured (`project/reviews/independent-framework-test-disposition-2026-07-30.md:53-58`).
+7. **Current operational state:** External intake is **not operational**. The SOP names no destination and expressly says intake remains non-operational until the destination, acknowledging maintainer, receipt confirmation, and alternate route are published (`CONTRIBUTING.md:331-347`). Governance states the same pre-publication gate (`GOVERNANCE.md:162-165`), and the disposition records that no public channel is configured (`project/reviews/independent-framework-application-test-disposition-2026-07-30.md:53-58`).
 8. **Before operational status can be claimed:** Publish the exact intake destination, responsible acknowledging maintainer, method for confirming the contribution was recorded, and alternate route; approve the required licensing and contribution terms before accepting external material for public distribution (`CONTRIBUTING.md:336-347,445-446`). No substitute intake channel is invented here.
 
 ## Prior-finding disposition
@@ -248,7 +250,7 @@ For the simulated material clarification rejected as “already addressed”:
 | Previous finding | Disposition | Evidence and smallest remaining correction |
 |---|---|---|
 | 1. Uniform examples created a mandatory-template signal. | **Partially Resolved** | Example 04 is a genuine structural counterexample with separate traceability, but the README says most examples still use the content headings (`examples/README.md:41-45`; `examples/04-employee-onboarding-offboarding.md:63-66,391-405`). Reorganize at least one additional example with a materially different operating pattern around domain work. |
-| 2. Contribution intake and appeals were operationally incomplete. | **Partially Resolved** | Appeal grounds, contents, routing, authority, dispositions, evidence, communication, and pending effect are documented (`CONTRIBUTING.md:393-425`; `GOVERNANCE.md:167-182`). External initiation still lacks an exact channel and receipt path, which the repository correctly treats as a publication gate (`CONTRIBUTING.md:331-347`; `project/reviews/independent-framework-test-disposition-2026-07-30.md:53-58`). |
+| 2. Contribution intake and appeals were operationally incomplete. | **Partially Resolved** | Appeal grounds, contents, routing, authority, dispositions, evidence, communication, and pending effect are documented (`CONTRIBUTING.md:393-425`; `GOVERNANCE.md:167-182`). External initiation still lacks an exact channel and receipt path, which the repository correctly treats as a publication gate (`CONTRIBUTING.md:331-347`; `project/reviews/independent-framework-application-test-disposition-2026-07-30.md:53-58`). |
 | 3. Temporary work versus recurring SOPs was unclear. | **Resolved** | Temporary or exceptional work may use a time-bounded standard, plan, playbook, or procedure, while repeatable activities receive a proportionate SOP-content check (`framework/operating-framework.md:209-215`). |
 
 ## New findings

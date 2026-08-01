@@ -32,9 +32,9 @@ complete. Tickets 01 through 14 meet their documented acceptance criteria. The
 owner subsequently approved shared operating memory as a version 1.0.0
 extension under [ADR-007](../../decisions/0007-shared-operating-memory.md).
 Repository-wide integration and internal review of that extension are
-complete. TARS and Ava, both Buzz AI agents, completed the source-bounded
-[application review](../reviews/shared-operating-memory-independent-application-review-2026-07-30-a.md)
-and [adversarial review](../reviews/shared-operating-memory-independent-adversarial-review-2026-07-30-b.md).
+complete. Two independent AI-assisted reviewers completed the source-bounded
+[application review](../reviews/shared-operating-memory-independent-application-review-2026-07-30.md)
+and [adversarial review](../reviews/shared-operating-memory-independent-adversarial-review-2026-07-30.md).
 Neither identified a blocker, material finding, or editorial finding; the
 [accountable disposition](../reviews/shared-operating-memory-independent-reviews-disposition-2026-07-30.md)
 accepts six observations without changing canonical meaning. The local

@@ -1,7 +1,7 @@
 # Stage 2 Completion Report
 
 **Status:** Approved by owner<br>
-**Owner:** Brad Groux<br>
+**Accountable role:** Framework owner<br>
 **Review date:** 2026-07-30<br>
 **Specification:** [Stage 2 specification](../specifications/stage-2.md)
 
@@ -13,7 +13,7 @@
 > **Repository update — 2026-07-30:** The package was subsequently migrated
 > into this isolated repository, resolving the delivery-history risk recorded
 > during the original review. See the
-> [repository migration review](repository-migration-2026-07-30.md). Statements
+> [repository migration review](repository-migration-review-2026-07-30.md). Statements
 > below about the original untracked workspace are retained as review context.
 >
 > **Release preparation update — 2026-07-30:** Private development history was
@@ -182,9 +182,9 @@ Priority review areas are:
 
 ### 2. Owner approval remains open
 
-The core documents and examples remain draft specifications. Brad Groux has not
-yet approved this completion report or designated the package as an approved
-framework baseline.
+The core documents and examples remain draft specifications. At the time of
+this review, the framework owner had not approved this completion report or
+designated the package as an approved framework baseline.
 
 ### 3. Publication remains a separate decision
 

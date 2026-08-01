@@ -1,8 +1,8 @@
 # Independent Post-Fix Review Disposition
 
 **Status:** Complete<br>
-**Date:** 2026-07-30<br>
-**Accountable owner:** Founding steward<br>
+**Decision date:** 2026-07-30<br>
+**Accountable role:** Founding steward<br>
 **Source:** [Independent post-fix review](independent-framework-post-fix-review-2026-07-30.md)
 
 > **Scope note:** This disposition predates the shared operating memory

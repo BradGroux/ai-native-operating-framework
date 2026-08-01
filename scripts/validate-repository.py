@@ -144,6 +144,65 @@ ALLOWED_PUBLIC_COMMIT_IDENTIFIERS = {
     "5fda3b95a4ea91299a34e894583c3862153e4b97",
 }
 
+REVIEW_RECORD_FILENAME_PATTERN = re.compile(
+    r"^[a-z0-9]+(?:-[a-z0-9]+)*-"
+    r"(?:review|test|disposition|prompt)-\d{4}-\d{2}-\d{2}\.md$"
+)
+REVIEW_RECORD_STATUS_PATTERN = re.compile(
+    r"^(?:- )?\*\*Status:\*\* .+$",
+    flags=re.MULTILINE,
+)
+REVIEW_RECORD_DATE_PATTERN = re.compile(
+    r"^(?:- )?\*\*(?:Review|Decision|Record) date:\*\* "
+    r"\d{4}-\d{2}-\d{2}(?:<br>)?$",
+    flags=re.MULTILINE,
+)
+REVIEW_ROLE_VALUE_PATTERN = re.compile(
+    r"^(?:- )?\*\*Review role:\*\* (.+?)(?:<br>)?$",
+    flags=re.MULTILINE,
+)
+ALLOWED_PUBLIC_REVIEW_ROLES = {
+    "Independent AI reviewer",
+    "Independent application reviewer",
+    "Independent adversarial consistency and publication reviewer",
+}
+FORBIDDEN_REVIEW_ATTRIBUTION_PATTERNS = [
+    re.compile(
+        r"^\*\*(?:Reviewer|Tester|Reviewer type|Tester type|Author):\*\*",
+        flags=re.MULTILINE | re.IGNORECASE,
+    ),
+    re.compile(
+        r"^#{1,6}\s+(?:Reviewer|Tester) Identity(?:\s+and\s+Limits)?$",
+        flags=re.MULTILINE | re.IGNORECASE,
+    ),
+    re.compile(
+        r"^#.*\b(?:Reviewer|Tester)\s+[A-Z](?:\b|$)",
+        flags=re.MULTILINE,
+    ),
+    re.compile(
+        r"^\|\s*(?:Reviewer|Tester)\s*\|",
+        flags=re.MULTILINE | re.IGNORECASE,
+    ),
+    re.compile(
+        r"\b(?:reviewed|tested|authored)\s+by\b",
+        flags=re.IGNORECASE,
+    ),
+    re.compile(
+        r"\b(?:reviewer|tester)\s+"
+        r"(?:name|identity|called|named|is|was)\b",
+        flags=re.IGNORECASE,
+    ),
+    re.compile(
+        r"\b[A-Z][A-Za-z0-9_.-]+\s+"
+        r"(?:conducted|performed|completed|authored|wrote|ran)\s+"
+        r"(?:this|the|an?)\s+(?:review|test)\b"
+    ),
+    re.compile(
+        r"\b(?:review|test)\s+(?:using|with|through|via)\s+"
+        r"(?:the\s+)?[A-Z][A-Za-z0-9_.-]+\b"
+    ),
+]
+
 
 class Validation:
     def __init__(self) -> None:
@@ -565,6 +624,51 @@ def validate_release_surface(validation: Validation) -> None:
     )
 
 
+def validate_review_records(validation: Validation) -> None:
+    reviews_directory = REPOSITORY_ROOT / "project/reviews"
+    review_records = sorted(
+        path for path in reviews_directory.glob("*.md") if path.name != "README.md"
+    )
+
+    for review_path in review_records:
+        name = relative(review_path)
+        text = review_path.read_text(encoding="utf-8")
+        metadata = "\n".join(text.splitlines()[:30])
+
+        validation.require(
+            REVIEW_RECORD_FILENAME_PATTERN.fullmatch(review_path.name) is not None,
+            f"{name}: review record filename must use "
+            "<subject>-<record-type>-YYYY-MM-DD.md with a recognized "
+            "review, test, disposition, or prompt type",
+        )
+        validation.require(
+            REVIEW_RECORD_STATUS_PATTERN.search(metadata) is not None,
+            f"{name}: first 30 lines must include Status",
+        )
+        validation.require(
+            REVIEW_RECORD_DATE_PATTERN.search(metadata) is not None,
+            f"{name}: first 30 lines must include a Review, Decision, or "
+            "Record date",
+        )
+        for role in REVIEW_ROLE_VALUE_PATTERN.findall(metadata):
+            validation.require(
+                role in ALLOWED_PUBLIC_REVIEW_ROLES,
+                f"{name}: Review role must use an approved public role label, "
+                f"found {role}",
+            )
+        for pattern in FORBIDDEN_REVIEW_ATTRIBUTION_PATTERNS:
+            validation.require(
+                pattern.search(text) is None,
+                f"{name}: reviewer and tester attribution must use public "
+                "role-based Review role or Review method labels",
+            )
+
+    validation.pass_result(
+        f"Review records: {len(review_records)} statuses, dates, typed "
+        "filenames, controlled roles, and identity-attribution forms checked"
+    )
+
+
 def validate_publication_safety(
     validation: Validation,
 ) -> None:
@@ -714,6 +818,7 @@ def main() -> int:
     validate_examples(validation)
     validate_operating_memory(validation)
     validate_release_surface(validation)
+    validate_review_records(validation)
     validate_publication_safety(validation)
     diagram_count = extract_mermaid(
         validation,

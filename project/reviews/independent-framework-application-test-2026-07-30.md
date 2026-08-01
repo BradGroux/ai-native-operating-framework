@@ -1,8 +1,8 @@
 # Independent Framework Application Test
 
 **Status:** Complete independent review<br>
-**Owner:** Framework owner<br>
-**Reviewer:** Independent agent reviewer<br>
+**Accountable role:** Framework owner<br>
+**Review role:** Independent AI reviewer<br>
 **Review date:** 2026-07-30<br>
 **Repository state:** Pre-publication development snapshot; private commit
 identifier removed during public-history sanitization<br>
