@@ -2,15 +2,15 @@
 
 **Status:** Complete — no unresolved blocker or material finding<br>
 **Review date:** 2026-07-30<br>
-**Accountable owner:** Brad Groux<br>
+**Accountable role:** Founding steward<br>
 **Review basis:** Prepared version 1.0.0 repository tree<br>
 **Specification:** [Shared operating memory extension specification](../specifications/shared-operating-memory-extension.md)<br>
 **Decision:** [ADR-007 — Shared operating memory](../../decisions/0007-shared-operating-memory.md)
 
-> **Later independent review update:** TARS and Ava, both Buzz AI agents,
+> **Later independent review update:** Two independent AI-assisted reviewers
 > subsequently completed the source-bounded
-> [application review](shared-operating-memory-independent-application-review-2026-07-30-a.md)
-> and [adversarial review](shared-operating-memory-independent-adversarial-review-2026-07-30-b.md).
+> [application review](shared-operating-memory-independent-application-review-2026-07-30.md)
+> and [adversarial review](shared-operating-memory-independent-adversarial-review-2026-07-30.md).
 > Neither identified a blocker, material finding, or editorial finding. Their
 > six observations and validation limits are addressed in the
 > [accountable disposition](shared-operating-memory-independent-reviews-disposition-2026-07-30.md).
@@ -162,11 +162,11 @@ explicit shared operating-memory integration.
 - `project/planning/open-questions.md`
 - `project/planning/tickets.md`
 - `project/reviews/independent-framework-application-test-2026-07-30.md`
-- `project/reviews/independent-framework-test-disposition-2026-07-30.md`
+- `project/reviews/independent-framework-application-test-disposition-2026-07-30.md`
 - `project/reviews/independent-framework-post-fix-review-2026-07-30.md`
 - `project/reviews/independent-framework-post-fix-review-disposition-2026-07-30.md`
-- `project/reviews/repository-migration-2026-07-30.md`
-- `project/reviews/stage-2-completion.md`
+- `project/reviews/repository-migration-review-2026-07-30.md`
+- `project/reviews/stage-2-completion-review-2026-07-30.md`
 - `project/specifications/stage-2.md`
 
 These files accurately describe an earlier ten-example scope or review. A
@@ -207,7 +207,7 @@ retroactively changing.
 - `examples/11-shared-operating-memory-capture-and-handoff.md`
 - `examples/shared-operating-memory-file-structures.md`
 - `project/specifications/shared-operating-memory-extension.md`
-- `project/reviews/shared-operating-memory-independent-review-prompt.md`
+- `project/reviews/shared-operating-memory-independent-review-prompt-2026-07-30.md`
 - this integrated review record
 
 ## Validation Results
@@ -283,6 +283,6 @@ history.
 
 Include the extension in the local sanitized version 1.0.0 release baseline.
 Use the prepared
-[independent review prompt](shared-operating-memory-independent-review-prompt.md)
+[independent review prompt](shared-operating-memory-independent-review-prompt-2026-07-30.md)
 for the next clean-context review, and record any resulting findings through
 the framework contribution and decision process.

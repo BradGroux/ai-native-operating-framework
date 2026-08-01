@@ -1,7 +1,8 @@
 # Repository Migration Review
 
 **Status:** Complete<br>
-**Date:** 2026-07-30<br>
+**Review date:** 2026-07-30<br>
+**Accountable role:** Release maintainer<br>
 **Scope:** Migration from the iCloud delivery workspace into the canonical
 `ai-native-operating-framework` repository
 

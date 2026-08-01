@@ -93,16 +93,16 @@ Version 1.0.0 is the complete, owner-approved initial release, dated
 2026-07-30.
 
 - [Stage 2 specification](project/specifications/stage-2.md)
-- [Stage 2 completion report](project/reviews/stage-2-completion.md)
+- [Stage 2 completion report](project/reviews/stage-2-completion-review-2026-07-30.md)
 - [Independent framework application test](project/reviews/independent-framework-application-test-2026-07-30.md)
-- [Independent test disposition](project/reviews/independent-framework-test-disposition-2026-07-30.md)
+- [Independent test disposition](project/reviews/independent-framework-application-test-disposition-2026-07-30.md)
 - [Independent post-fix review](project/reviews/independent-framework-post-fix-review-2026-07-30.md)
 - [Independent post-fix review disposition](project/reviews/independent-framework-post-fix-review-disposition-2026-07-30.md)
 - [Shared operating memory extension specification](project/specifications/shared-operating-memory-extension.md)
 - [Shared operating memory extension review](project/reviews/shared-operating-memory-extension-review-2026-07-30.md)
-- [Shared operating memory independent review prompt](project/reviews/shared-operating-memory-independent-review-prompt.md)
-- [TARS independent memory application review](project/reviews/shared-operating-memory-independent-application-review-2026-07-30-a.md)
-- [Ava independent memory adversarial review](project/reviews/shared-operating-memory-independent-adversarial-review-2026-07-30-b.md)
+- [Shared operating memory independent review prompt](project/reviews/shared-operating-memory-independent-review-prompt-2026-07-30.md)
+- [Independent memory application review](project/reviews/shared-operating-memory-independent-application-review-2026-07-30.md)
+- [Independent memory adversarial review](project/reviews/shared-operating-memory-independent-adversarial-review-2026-07-30.md)
 - [Independent memory reviews disposition](project/reviews/shared-operating-memory-independent-reviews-disposition-2026-07-30.md)
 - [Current project status](project/planning/status.md)
 
@@ -110,11 +110,10 @@ All eleven examples are approved for inclusion as **Illustrative; not
 domain-validated**. They must not be used operationally without appropriate
 organizational authority and domain review.
 
-The shared operating memory extension received source-bounded independent
-application and adversarial reviews from TARS and Ava, both Buzz AI agents.
-Neither found a blocker, material finding, or editorial finding. These reviews
-are AI review evidence, not human, organizational, professional, or domain
-validation.
+The shared operating memory extension received two source-bounded independent
+AI-assisted reviews: one application review and one adversarial review. Neither
+found a blocker, material finding, or editorial finding. These reports are AI
+review evidence, not human, organizational, professional, or domain validation.
 
 The framework is available under the [MIT License](LICENSE.md). Its designated
 public home is

@@ -49,8 +49,10 @@ All material framework releases and repository changes will be recorded here.
 - An integrated extension review and a source-bounded prompt for later
   independent application review.
 - Sanitized independent shared operating memory application and adversarial
-  reviews by TARS and Ava, both Buzz AI agents, with an accountable findings
-  disposition.
+  AI-assisted reviews, with an accountable findings disposition.
+- A standard dated naming convention and role-based reviewer attribution for
+  public review records, with repository validation for required metadata,
+  controlled role labels, and common identity-attribution forms.
 
 ### Status
 

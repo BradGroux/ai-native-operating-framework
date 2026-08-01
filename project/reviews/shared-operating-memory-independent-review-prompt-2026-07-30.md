@@ -1,12 +1,16 @@
 # Independent Shared Operating Memory Review Prompt
 
+**Status:** Reusable review prompt<br>
+**Record date:** 2026-07-30<br>
+**Intended review role:** Independent clean-context reviewer
+
 Use this prompt with a clean-context reviewer that has access only to the
 repository being reviewed.
 
-> **Execution status:** Completed in two independent variations by TARS and
-> Ava, both Buzz AI agents. See the
-> [application review](shared-operating-memory-independent-application-review-2026-07-30-a.md),
-> [adversarial review](shared-operating-memory-independent-adversarial-review-2026-07-30-b.md),
+> **Execution status:** Completed in two independent AI-assisted variations: an
+> application review and an adversarial review. See the
+> [application review](shared-operating-memory-independent-application-review-2026-07-30.md),
+> [adversarial review](shared-operating-memory-independent-adversarial-review-2026-07-30.md),
 > and [accountable disposition](shared-operating-memory-independent-reviews-disposition-2026-07-30.md).
 > The prompt remains reusable for later clean-context review.
 
