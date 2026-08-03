@@ -4,6 +4,10 @@
 - **Date:** 2026-08-03
 - **Owner:** Brad Groux
 
+**Exact-pin status:** Superseded only for the Commons release commit by
+[ADR-009](0009-correct-open-framework-commons-v1-0-0-release-pin.md). The
+original decision body below is preserved as point-in-time evidence.
+
 ## Question
 
 Should the AI-Native Operating Framework adopt Open Framework Commons

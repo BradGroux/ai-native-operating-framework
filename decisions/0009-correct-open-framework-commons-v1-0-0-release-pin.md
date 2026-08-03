@@ -18,7 +18,7 @@ to corrected release commit
 [a0f0d384e9010a65d1a21a324b4c912433d5e0<wbr>31](https://github.com/BradGroux/open-framework-commons/releases/tag/v1.0.0).
 This decision supersedes only the exact Commons release pin in
 [ADR-008](0008-adopt-open-framework-commons-v1-0-0.md). The original decision
-and its review records remain point-in-time evidence rather than being
+body and its review records remain point-in-time evidence rather than being
 rewritten.
 
 The source comparison found:
@@ -45,11 +45,11 @@ but the Commons `v1.0.0` tag moved from
 review.
 
 The founding steward accepts the corrected pin as a one-time exception because
-no downstream adoption or organizational use is recorded. This exception does
-not make a moving release tag acceptable practice. A future correction to an
-adopted Commons release should use a new semantic version; any unexpected tag
-movement must stop dependent publication until it receives a visible product
-decision.
+no downstream organizational use of the AI-Native Operating Framework is
+recorded. This exception does not make a moving release tag acceptable
+practice. A future correction to an adopted Commons release should use a new
+semantic version; any unexpected tag movement must stop dependent publication
+until it receives a visible product decision.
 
 ## Consequences
 
@@ -74,5 +74,6 @@ review, or real-world effectiveness.
 - `README.md`
 - `GOVERNANCE.md`
 - `CHANGELOG.md`
+- `decisions/0008-adopt-open-framework-commons-v1-0-0.md`
 - `decisions/README.md`
 - repository review and release records

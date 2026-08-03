@@ -19,9 +19,10 @@ All material framework releases and repository changes will be recorded here.
   rule, the one-time no-downstream-use exception, and future release handling in
   [ADR-009](decisions/0009-correct-open-framework-commons-v1-0-0-release-pin.md).
 
-The original ADR-008 and adoption reviews remain unchanged as point-in-time
-evidence of the first reviewed pin. Fresh reviews govern this corrected release
-pin. AI-Native remains at `v1.0.0` and is republished after merge and final
+The original ADR-008 decision body and adoption reviews remain intact as
+point-in-time evidence of the first reviewed pin; ADR-008 now links to its
+exact-pin supersession. Fresh reviews govern this corrected release pin.
+AI-Native remains at `v1.0.0` and is republished after merge and final
 verification.
 
 ### Documentation refresh — 2026-08-03
