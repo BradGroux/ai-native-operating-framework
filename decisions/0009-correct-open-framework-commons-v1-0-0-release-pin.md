@@ -15,7 +15,7 @@ corrected release commit?
 AI-Native now pins Open Framework Commons
 [`v1.0.0`](https://github.com/BradGroux/open-framework-commons/tree/v1.0.0)
 to corrected release commit
-[a0f0d384e9010a65d1a21a324b4c912433d5e0<wbr>31](https://github.com/BradGroux/open-framework-commons/releases/tag/v1.0.0).
+[a0f0d384e9010a65d1a21a324b4c912433d5e0<wbr>31](https://github.com/BradGroux/open-framework-commons/commit/a0f0d384e9010a65d1a21a324b4c912433d5e031).
 This decision supersedes only the exact Commons release pin in
 [ADR-008](0008-adopt-open-framework-commons-v1-0-0.md). The original decision
 body and its review records remain point-in-time evidence rather than being
@@ -60,6 +60,9 @@ until it receives a visible product decision.
   tree and this release-integrity exception.
 - AI-Native `v1.0.0` is republished from the verified merged commit under the
   no-downstream-use decision.
+- Before replacement, the product's annotated `v1.0.0` tag object was
+  `3424738c1c3cfdcb1e009789f84a8a33`<wbr>`a1ae0bdb` and its peeled commit
+  was `2e402d89598849f37e12f6e54c9d7f24`<wbr>`ac5ca76c`.
 - Later Commons revisions or tag movements never amend AI-Native automatically.
 
 ## Material Dissent and Limitations

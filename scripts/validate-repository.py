@@ -138,6 +138,8 @@ EMAIL_PATTERN = re.compile(
     flags=re.IGNORECASE,
 )
 ALLOWED_PUBLIC_COMMIT_IDENTIFIERS = {
+    # Open Framework Commons v1.0.0
+    "a0f0d384e9010a65d1a21a324b4c912433d5e031",
     # actions/checkout v6
     "d23441a48e516b6c34aea4fa41551a30e30af803",
     # actions/setup-python v7
