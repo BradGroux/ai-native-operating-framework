@@ -1,5 +1,11 @@
 # Reviews
 
+- [Open Framework Commons v1.0.0 adoption standards review](open-framework-commons-v1-0-0-adoption-standards-review-2026-08-03.md)
+  — independent authority, consistency, release, and publication review of the
+  corrected adoption candidate.
+- [Open Framework Commons v1.0.0 adoption specification review](open-framework-commons-v1-0-0-adoption-specification-review-2026-08-03.md)
+  — independent traceability review against the adoption and release-refresh
+  requirements.
 - [Stage 2 completion report](stage-2-completion-review-2026-07-30.md) — integrated review of the
   initial framework package.
 - [Repository migration review](repository-migration-review-2026-07-30.md) — review of

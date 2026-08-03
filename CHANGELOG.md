@@ -16,6 +16,11 @@ All material framework releases and repository changes will be recorded here.
 - Recorded the accountable adoption, interpretation, release treatment,
   limitations, and affected artifacts in
   [ADR-008](decisions/0008-adopt-open-framework-commons-v1-0-0.md).
+- Published sanitized
+  [standards](project/reviews/open-framework-commons-v1-0-0-adoption-standards-review-2026-08-03.md)
+  and
+  [specification](project/reviews/open-framework-commons-v1-0-0-adoption-specification-review-2026-08-03.md)
+  review records for the corrected candidate.
 
 This refresh is documentation-only. It does not amend the charter, business
 method, framework vocabulary, examples, research, governance authority,
