@@ -1,5 +1,8 @@
 # Reviews
 
+- [Open Framework Commons v1.0.0 coordinated refresh review](open-framework-commons-v1-0-0-coordinated-refresh-review-2026-08-03.md)
+  — independent standards and specification review of the final Commons pin,
+  including the two resolved release-integrity findings.
 - [Open Framework Commons v1.0.0 adoption standards review](open-framework-commons-v1-0-0-adoption-standards-review-2026-08-03.md)
   — independent authority, consistency, release, and publication review of the
   corrected adoption candidate.
