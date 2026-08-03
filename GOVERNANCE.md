@@ -2,7 +2,7 @@
 
 **Status:** Approved initial repository governance<br>
 **Founding steward:** Brad Groux<br>
-**Last reviewed:** 2026-07-30
+**Last reviewed:** 2026-08-03
 
 ## Purpose
 
