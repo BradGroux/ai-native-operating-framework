@@ -25,6 +25,12 @@ exact-pin supersession. Fresh reviews govern this corrected release pin.
 AI-Native remains at `v1.0.0` and is republished after merge and final
 verification.
 
+The corrected candidate passed fresh independent
+[standards](project/reviews/open-framework-commons-v1-0-0-final-pin-standards-review-2026-08-03.md)
+and
+[specification](project/reviews/open-framework-commons-v1-0-0-final-pin-specification-review-2026-08-03.md)
+reviews with no unresolved findings.
+
 ### Documentation refresh — 2026-08-03
 
 - Adopted

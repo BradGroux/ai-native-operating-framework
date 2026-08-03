@@ -1,5 +1,11 @@
 # Reviews
 
+- [Open Framework Commons v1.0.0 final-pin standards review](open-framework-commons-v1-0-0-final-pin-standards-review-2026-08-03.md)
+  — independent authority, consistency, release-integrity, and publication
+  review of the corrected Commons pin.
+- [Open Framework Commons v1.0.0 final-pin specification review](open-framework-commons-v1-0-0-final-pin-specification-review-2026-08-03.md)
+  — independent traceability review of the corrected pin and `v1.0.0`
+  republication instruction.
 - [Open Framework Commons v1.0.0 adoption standards review](open-framework-commons-v1-0-0-adoption-standards-review-2026-08-03.md)
   — independent authority, consistency, release, and publication review of the
   corrected adoption candidate.
