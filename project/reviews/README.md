@@ -1,5 +1,8 @@
 # Reviews
 
+- [Open Framework Commons v1.0.0 release-integrity review](open-framework-commons-v1-0-0-release-integrity-review-2026-08-03.md)
+  — independent standards and specification follow-up for the immutable commit
+  links, publication allowlist, and prior product tag evidence.
 - [Open Framework Commons v1.0.0 final-pin standards review](open-framework-commons-v1-0-0-final-pin-standards-review-2026-08-03.md)
   — independent authority, consistency, release-integrity, and publication
   review of the corrected Commons pin.
