@@ -10,7 +10,11 @@ All material framework releases and repository changes will be recorded here.
   commit
   `27870fb1d57d951b9ef5a3a86f33ef0`<wbr>`68ee557da`
   to corrected release commit
-  [a0f0d384e9010a65d1a21a324b4c912433d5e0<wbr>31](https://github.com/BradGroux/open-framework-commons/releases/tag/v1.0.0).
+  [a0f0d384e9010a65d1a21a324b4c912433d5e0<wbr>31](https://github.com/BradGroux/open-framework-commons/commit/a0f0d384e9010a65d1a21a324b4c912433d5e031).
+- Before this product's coordinated tag replacement, its annotated
+  `v1.0.0` tag object was
+  `3424738c1c3cfdcb1e009789f84a8a33`<wbr>`a1ae0bdb` and peeled to
+  `2e402d89598849f37e12f6e54c9d7f24`<wbr>`ac5ca76c`.
 - Confirmed that the corrected Commons tree leaves all nine shared principles
   and product-independence boundaries unchanged. It makes Relationship
   Operating Framework current, adds explanatory diagrams, and publishes

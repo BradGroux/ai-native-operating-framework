@@ -46,7 +46,7 @@ The AI-Native Operating Framework adopts
 [Open Framework Commons](https://github.com/BradGroux/open-framework-commons)
 [`v1.0.0`](https://github.com/BradGroux/open-framework-commons/tree/v1.0.0),
 release commit
-[a0f0d384e9010a65d1a21a324b4c912433d5e0<wbr>31](https://github.com/BradGroux/open-framework-commons/releases/tag/v1.0.0).
+[a0f0d384e9010a65d1a21a324b4c912433d5e0<wbr>31](https://github.com/BradGroux/open-framework-commons/commit/a0f0d384e9010a65d1a21a324b4c912433d5e031).
 Commons is shared ecosystem context, not a parent framework, certification,
 implementation layer, or governing authority over this framework.
 
