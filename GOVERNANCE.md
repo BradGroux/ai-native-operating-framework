@@ -46,12 +46,14 @@ The AI-Native Operating Framework adopts
 [Open Framework Commons](https://github.com/BradGroux/open-framework-commons)
 [`v1.0.0`](https://github.com/BradGroux/open-framework-commons/tree/v1.0.0),
 release commit
-[27870fb1d57d951b9ef5a3a86f33ef0<wbr>68ee557da](https://github.com/BradGroux/open-framework-commons/releases/tag/v1.0.0).
+[a0f0d384e9010a65d1a21a324b4c912433d5e0<wbr>31](https://github.com/BradGroux/open-framework-commons/releases/tag/v1.0.0).
 Commons is shared ecosystem context, not a parent framework, certification,
 implementation layer, or governing authority over this framework.
 
-The accountable adoption and release treatment are recorded in
-[ADR-008](decisions/0008-adopt-open-framework-commons-v1-0-0.md).
+The original accountable adoption is recorded in
+[ADR-008](decisions/0008-adopt-open-framework-commons-v1-0-0.md). The corrected
+release pin and release-integrity exception are recorded in
+[ADR-009](decisions/0009-correct-open-framework-commons-v1-0-0-release-pin.md).
 
 | Disposition | AI-Native alignment |
 |---|---|
@@ -68,10 +70,18 @@ principle is an ecosystem value, not an additional contribution prerequisite,
 commercial restriction, business concern, SOP content requirement, or method
 activity.
 
-No material conflict with Commons `v1.0.0` is recorded. If a later Commons
-revision appears to conflict with this framework, the conflict must remain
-visible until the responsible authority decides whether to adopt, defer, or
-deviate. A Commons change never amends this framework automatically.
+The Commons `v1.0.0` tag moved after the original adoption review even though
+Commons Governance describes annotated release tags as immutable. The founding
+steward accepts the corrected pin as a one-time release-integrity exception
+because no downstream use is recorded. This is not a precedent for silently
+following a moved tag; a later tag movement requires a visible decision and
+normally a new Commons version.
+
+No material principle, method, or product-authority conflict with the corrected
+Commons `v1.0.0` content is recorded. If a later Commons revision appears to
+conflict with this framework, the conflict must remain visible until the
+responsible authority decides whether to adopt, defer, or deviate. A Commons
+change never amends this framework automatically.
 
 ## Decision Flow
 

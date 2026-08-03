@@ -4,6 +4,33 @@ All material framework releases and repository changes will be recorded here.
 
 ## 1.0.0 — 2026-07-30; refreshed 2026-08-03
 
+### Commons release-pin correction — 2026-08-03
+
+- Repinned Open Framework Commons `v1.0.0` from the initially reviewed release
+  commit
+  `27870fb1d57d951b9ef5a3a86f33ef0`<wbr>`68ee557da`
+  to corrected release commit
+  [a0f0d384e9010a65d1a21a324b4c912433d5e0<wbr>31](https://github.com/BradGroux/open-framework-commons/releases/tag/v1.0.0).
+- Confirmed that the corrected Commons tree leaves all nine shared principles
+  and product-independence boundaries unchanged. It makes Relationship
+  Operating Framework current, adds explanatory diagrams, and publishes
+  product adoption links.
+- Recorded the moved Commons tag, its conflict with the Commons immutability
+  rule, the one-time no-downstream-use exception, and future release handling in
+  [ADR-009](decisions/0009-correct-open-framework-commons-v1-0-0-release-pin.md).
+
+The original ADR-008 decision body and adoption reviews remain intact as
+point-in-time evidence of the first reviewed pin; ADR-008 now links to its
+exact-pin supersession. Fresh reviews govern this corrected release pin.
+AI-Native remains at `v1.0.0` and is republished after merge and final
+verification.
+
+The corrected candidate passed fresh independent
+[standards](project/reviews/open-framework-commons-v1-0-0-final-pin-standards-review-2026-08-03.md)
+and
+[specification](project/reviews/open-framework-commons-v1-0-0-final-pin-specification-review-2026-08-03.md)
+reviews with no unresolved findings.
+
 ### Documentation refresh — 2026-08-03
 
 - Adopted
