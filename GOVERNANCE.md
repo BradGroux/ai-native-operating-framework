@@ -40,6 +40,36 @@ authority outside this governance process.
 Stewardship does not create professional authority over the domains represented
 by framework examples.
 
+## Open Framework Commons Adoption
+
+The AI-Native Operating Framework adopts
+[Open Framework Commons](https://github.com/BradGroux/open-framework-commons)
+[`v1.0.0`](https://github.com/BradGroux/open-framework-commons/tree/v1.0.0),
+release commit
+[27870fb1d57d951b9ef5a3a86f33ef0&#54;8ee557da](https://github.com/BradGroux/open-framework-commons/commit/27870fb1d57d951b9ef5a3a86f33ef0%368ee557da).
+Commons is shared ecosystem context, not a parent framework, certification,
+implementation layer, or governing authority over this framework.
+
+| Disposition | AI-Native alignment |
+|---|---|
+| Adopted shared principles | All nine Commons principles are adopted: people first; own the method and rent the tool; play the long game; contribute before extracting; steward what matters; keep products independent; build in the open; learn honestly; and use technology as an amplifier. |
+| Product-local guidance | The charter, six concerns, eight SOP content areas, shared operating memory standard, six maintenance activities, terminology, examples, research, contribution process, governance, roadmap, releases, and implementation choices remain owned here. |
+| Deferred shared principles | None for Commons `v1.0.0`. |
+| Explicit deviations | None for Commons `v1.0.0`. |
+
+The people-first principle means that people supply business purpose, judgment,
+and accountability. It does not narrow this framework's approved meaning of
+AI-native work: people and AI may both perform work under the same standards,
+with explicit accountable human ownership. The contribute-before-extracting
+principle is an ecosystem value, not an additional contribution prerequisite,
+commercial restriction, business concern, SOP content requirement, or method
+activity.
+
+No material conflict with Commons `v1.0.0` is recorded. If a later Commons
+revision appears to conflict with this framework, the conflict must remain
+visible until the responsible authority decides whether to adopt, defer, or
+deviate. A Commons change never amends this framework automatically.
+
 ## Decision Flow
 
 ```mermaid

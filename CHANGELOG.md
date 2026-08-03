@@ -12,6 +12,13 @@ All material framework releases and repository changes will be recorded here.
   [Digital Meld](https://digitalmeld.io)'s research arm and its relationship to
   the [AI Dev Days](https://github.com/bradgroux/ai-dev-days) research and
   education initiative, without changing framework governance or authority.
+- Adopted
+  [Open Framework Commons](https://github.com/BradGroux/open-framework-commons)
+  [`v1.0.0`](https://github.com/BradGroux/open-framework-commons/tree/v1.0.0)
+  at release commit
+  [27870fb1d57d951b9ef5a3a86f33ef0&#54;8ee557da](https://github.com/BradGroux/open-framework-commons/commit/27870fb1d57d951b9ef5a3a86f33ef0%368ee557da)
+  as shared ecosystem context, with the principle dispositions and independent
+  authority boundary recorded in Governance.
 - Charter, operating framework, SOP content standard, shared operating memory
   standard, standards maintenance method, and approved glossary.
 - Eleven complete illustrative examples.
@@ -58,6 +65,9 @@ All material framework releases and repository changes will be recorded here.
 
 - The version 1.0.0 framework baseline is complete and owner-approved for
   release.
+- The Commons adoption is documentation-only and does not amend the charter,
+  business method, framework vocabulary, examples, research, governance
+  authority, roadmap, or release ownership.
 - All examples are illustrative and not domain-validated.
 - The framework and submitted contributions use the MIT License.
 - The designated public location is
