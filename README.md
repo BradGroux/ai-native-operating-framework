@@ -25,7 +25,7 @@ The current repository adopts
 [Open Framework Commons](https://github.com/BradGroux/open-framework-commons)
 [`v1.0.0`](https://github.com/BradGroux/open-framework-commons/tree/v1.0.0),
 release commit
-[27870fb1d57d951b9ef5a3a86f33ef0<wbr>68ee557da](https://github.com/BradGroux/open-framework-commons/releases/tag/v1.0.0),
+[a0f0d384e9010a65d1a21a324b4c912<wbr>433d5e031](https://github.com/BradGroux/open-framework-commons/commit/a0f0d384e901),
 as shared ecosystem context.
 
 Commons supplies shared principles and boundaries; it is not a parent

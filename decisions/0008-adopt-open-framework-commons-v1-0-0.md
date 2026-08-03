@@ -16,7 +16,7 @@ The AI-Native Operating Framework adopts
 [Open Framework Commons](https://github.com/BradGroux/open-framework-commons)
 [`v1.0.0`](https://github.com/BradGroux/open-framework-commons/tree/v1.0.0),
 release commit
-[27870fb1d57d951b9ef5a3a86f33ef0<wbr>68ee557da](https://github.com/BradGroux/open-framework-commons/releases/tag/v1.0.0),
+[a0f0d384e9010a65d1a21a324b4c912<wbr>433d5e031](https://github.com/BradGroux/open-framework-commons/commit/a0f0d384e901),
 as shared ecosystem context.
 
 All nine Commons principles are adopted. None are deferred and none require an
@@ -55,9 +55,22 @@ No downstream adoption or organizational use of the framework is recorded.
 The founding steward therefore approves this documentation-only change as a
 refresh of the existing `v1.0.0` release rather than a new semantic version.
 The original effective date remains 2026-07-30; the refresh is dated
-2026-08-03. Publication occurs only after merge, final validation, and exact
-lease-protected replacement of the annotated tag. The previous tag object and
-peeled commit remain recorded in the delivery evidence.
+2026-08-03. Commons `v1.0.0` previously resolved to
+`27870fb1d57d951b9ef5a3a86f33ef0`<wbr>`68ee557da` and now resolves to
+`a0f0d384e9010a65d1a21a324b4c912`<wbr>`433d5e031` after its coordinated
+documentation republication. The refreshed Commons diagrams and ecosystem
+status do not change this framework's method, local authority, or release
+ownership.
+
+This repository's `v1.0.0` will be republished only after this change is
+reviewed and merged. Publication then requires final validation, exact
+merged-tree verification, and lease-protected replacement of the annotated
+tag. The previous product tag object and peeled commit, plus the new merged
+release commit, remain recorded in the delivery evidence.
+
+Before replacement, the product's annotated `v1.0.0` tag object was
+`3424738c1c3cfdcb1e009789f84a8a33`<wbr>`a1ae0bdb` and its peeled commit was
+`2e402d89598849f37e12f6e54c9d7f24`<wbr>`ac5ca76c`.
 
 ## Material Dissent and Limitations
 

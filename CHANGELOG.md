@@ -4,13 +4,27 @@ All material framework releases and repository changes will be recorded here.
 
 ## 1.0.0 — 2026-07-30; refreshed 2026-08-03
 
+### Coordinated Commons republication — 2026-08-03
+
+- Updated the exact Open Framework Commons `v1.0.0` pin from
+  `27870fb1d57d951b9ef5a3a86f33ef0`<wbr>`68ee557da` to
+  `a0f0d384e9010a65d1a21a324b4c912`<wbr>`433d5e031`.
+- Before this product's coordinated tag replacement, its annotated
+  `v1.0.0` tag object was
+  `3424738c1c3cfdcb1e009789f84a8a33`<wbr>`a1ae0bdb` and peeled to
+  `2e402d89598849f37e12f6e54c9d7f24`<wbr>`ac5ca76c`.
+- The refreshed Commons diagrams and ecosystem status do not change the
+  AI-Native Operating Framework method, local authority, or release ownership.
+- This repository's `v1.0.0` will be republished only after this documentation
+  change is reviewed and merged.
+
 ### Documentation refresh — 2026-08-03
 
 - Adopted
   [Open Framework Commons](https://github.com/BradGroux/open-framework-commons)
   [`v1.0.0`](https://github.com/BradGroux/open-framework-commons/tree/v1.0.0)
   at release commit
-  [27870fb1d57d951b9ef5a3a86f33ef0<wbr>68ee557da](https://github.com/BradGroux/open-framework-commons/releases/tag/v1.0.0)
+  [a0f0d384e9010a65d1a21a324b4c912<wbr>433d5e031](https://github.com/BradGroux/open-framework-commons/commit/a0f0d384e901)
   as shared ecosystem context, with the principle dispositions and independent
   authority boundary recorded in Governance.
 - Recorded the accountable adoption, interpretation, release treatment,
