@@ -13,6 +13,7 @@ original source handoff.
 5. [ADR-005 — SOP content standard](0005-sop-content-standard.md)
 6. [ADR-006 — Standards maintenance method](0006-standards-maintenance-method.md)
 7. [ADR-007 — Shared operating memory](0007-shared-operating-memory.md)
+8. [ADR-008 — Adopt Open Framework Commons v1.0.0](0008-adopt-open-framework-commons-v1-0-0.md)
 
 ## Guidance
 

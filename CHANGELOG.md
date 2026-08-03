@@ -2,7 +2,29 @@
 
 All material framework releases and repository changes will be recorded here.
 
-## 1.0.0 — 2026-07-30
+## 1.0.0 — 2026-07-30; refreshed 2026-08-03
+
+### Documentation refresh — 2026-08-03
+
+- Adopted
+  [Open Framework Commons](https://github.com/BradGroux/open-framework-commons)
+  [`v1.0.0`](https://github.com/BradGroux/open-framework-commons/tree/v1.0.0)
+  at release commit
+  [27870fb1d57d951b9ef5a3a86f33ef0<wbr>68ee557da](https://github.com/BradGroux/open-framework-commons/releases/tag/v1.0.0)
+  as shared ecosystem context, with the principle dispositions and independent
+  authority boundary recorded in Governance.
+- Recorded the accountable adoption, interpretation, release treatment,
+  limitations, and affected artifacts in
+  [ADR-008](decisions/0008-adopt-open-framework-commons-v1-0-0.md).
+- Published sanitized
+  [standards](project/reviews/open-framework-commons-v1-0-0-adoption-standards-review-2026-08-03.md)
+  and
+  [specification](project/reviews/open-framework-commons-v1-0-0-adoption-specification-review-2026-08-03.md)
+  review records for the corrected candidate.
+
+This refresh is documentation-only. It does not amend the charter, business
+method, framework vocabulary, examples, research, governance authority,
+roadmap, or release ownership.
 
 ### Added
 

@@ -19,6 +19,21 @@ These relationships provide research, application, teaching, and learning
 context. Neither Digital Meld nor AI Dev Days may redefine the framework
 outside its documented contribution and governance processes.
 
+## Open Framework Commons
+
+The current repository adopts
+[Open Framework Commons](https://github.com/BradGroux/open-framework-commons)
+[`v1.0.0`](https://github.com/BradGroux/open-framework-commons/tree/v1.0.0),
+release commit
+[27870fb1d57d951b9ef5a3a86f33ef0<wbr>68ee557da](https://github.com/BradGroux/open-framework-commons/releases/tag/v1.0.0),
+as shared ecosystem context.
+
+Commons supplies shared principles and boundaries; it is not a parent
+framework or source of automatic requirements. The AI-Native Operating
+Framework remains independent and owns its charter, business method,
+terminology, examples, research, governance, roadmap, and releases. The exact
+alignment and authority boundary are recorded in [Governance](GOVERNANCE.md).
+
 ## Start Here
 
 Read the canonical framework in this order:
@@ -90,7 +105,8 @@ requirements.
 ## Current Status
 
 Version 1.0.0 is the complete, owner-approved initial release, dated
-2026-07-30.
+2026-07-30 and refreshed on 2026-08-03 to record the documentation-only Commons
+adoption.
 
 - [Stage 2 specification](project/specifications/stage-2.md)
 - [Stage 2 completion report](project/reviews/stage-2-completion-review-2026-07-30.md)
