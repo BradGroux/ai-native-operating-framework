@@ -14,6 +14,7 @@ original source handoff.
 6. [ADR-006 — Standards maintenance method](0006-standards-maintenance-method.md)
 7. [ADR-007 — Shared operating memory](0007-shared-operating-memory.md)
 8. [ADR-008 — Adopt Open Framework Commons v1.0.0](0008-adopt-open-framework-commons-v1-0-0.md)
+9. [ADR-009 — Correct Open Framework Commons v1.0.0 release pin](0009-correct-open-framework-commons-v1-0-0-release-pin.md)
 
 ## Guidance
 
