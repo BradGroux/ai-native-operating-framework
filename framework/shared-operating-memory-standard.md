@@ -369,7 +369,7 @@ acts only within the permissions and responsibilities assigned to its role.
 ## Operating Memory Loop
 
 ```mermaid
-flowchart LR
+flowchart TB
     F["Find<br/>locate current memory"]
     A["Assess<br/>authority, freshness,<br/>scope, and access"]
     U["Use<br/>perform or review work"]

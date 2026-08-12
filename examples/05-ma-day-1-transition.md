@@ -35,7 +35,7 @@ what may occur before close, and which obligations survive it.
 ## Procedure at a Glance
 
 ```mermaid
-flowchart LR
+flowchart TB
     G["Establish temporary governance"] --> P["Define Day 1 outcomes<br/>and workstream plans"]
     P --> R["Review readiness"]
     R --> C{"Legal close confirmed?"}
@@ -112,6 +112,23 @@ team. AI may help consolidate approved plans, identify dependency conflicts, or
 summarize status. It may not infer legal close, release restricted information,
 change authority, make employment or customer commitments, or approve a
 cutover.
+
+### Temporary Authority and Handoff
+
+```mermaid
+flowchart TB
+    L["Transaction and Legal Authority<br/>confirms close and permitted action"]
+    S["Executive Transaction Sponsor<br/>owns outcomes and material tradeoffs"]
+    D["Day 1 Transition Director<br/>coordinates the temporary organization"]
+    W["Workstream and Control Owners<br/>prepare, execute, and verify"]
+    C["Business Continuity and specialist owners<br/>contain exceptions within authority"]
+    I["Integration Owner<br/>accepts stabilized work"]
+
+    L --> S --> D --> W --> I
+    D --> C
+    C --> W
+    L -. "authority changes at confirmed close" .-> D
+```
 
 ## 3. Trigger, Prerequisites, Inputs, and Authoritative Sources
 

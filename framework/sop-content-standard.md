@@ -45,7 +45,7 @@ Matching headings are not required. Clear business meaning is.
 ## SOP Anatomy at a Glance
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph M["Meaning and operation"]
         P["Purpose, scope,<br/>and outcome"]
         R["Ownership, roles,<br/>and authority"]
@@ -209,7 +209,7 @@ the procedure no longer produces the expected outcome.
 ## SOP Feedback Loop
 
 ```mermaid
-flowchart LR
+flowchart TB
     U["Use the approved SOP"]
     O["Observe outcomes, evidence,<br/>exceptions, and feedback"]
     M["Maintainer reviews<br/>triggers and patterns"]

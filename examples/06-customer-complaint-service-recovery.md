@@ -40,7 +40,7 @@ case closure alone.
 ## Procedure at a Glance
 
 ```mermaid
-flowchart LR
+flowchart TB
     I["Recognize and record"] --> A["Acknowledge<br/>and set expectations"]
     A --> T["Triage severity<br/>and authority"]
     T -. "specialist matter" .-> S["Specialist process<br/>with linked case ownership"]
@@ -110,6 +110,26 @@ facts, translate approved messages, or suggest relevant policy. A responsible
 participant must review its output. AI may not dismiss a complaint, determine
 credibility, infer protected characteristics, approve a remedy, admit
 liability, or send a commitment without authority.
+
+### Ownership and Specialist Authority
+
+```mermaid
+flowchart TB
+    I["Intake Participant<br/>recognizes and records the complaint"]
+    C["Case Owner<br/>retains end-to-end coordination"]
+    S["Specialist Authority<br/>decides specialist matters"]
+    R["Remedy Approver<br/>authorizes the remedy within limits"]
+    O["Service or Product Owner<br/>corrects the underlying service"]
+    V["Case Owner<br/>communicates, verifies, and closes"]
+    D["Customer Experience Director<br/>accountable for outcomes and policy"]
+
+    I --> C
+    C --> S --> C
+    C --> R --> C
+    C --> O --> V
+    D --- C
+    D --- V
+```
 
 ## 3. Trigger, Prerequisites, Inputs, and Authoritative Sources
 

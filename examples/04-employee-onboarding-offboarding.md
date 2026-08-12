@@ -36,7 +36,7 @@ changes.
 ## Procedure at a Glance
 
 ```mermaid
-flowchart LR
+flowchart TB
     A["Authorized employment event"] --> C["Open and classify case"]
     C --> T{"Event type"}
     T --> J["Joiner readiness<br/>and activation"]
@@ -114,6 +114,25 @@ orientation questions, or identify missing evidence. It may not decide an
 employment action, infer sensitive personal facts, expand access, communicate a
 confidential decision without authorization, or mark completion without
 evidence.
+
+### Authority and Handoff
+
+```mermaid
+flowchart TB
+    P["Authorized People Partner<br/>confirms the employment event"]
+    C["Lifecycle Coordinator<br/>opens and coordinates the case"]
+    M["Manager<br/>defines business readiness and role needs"]
+    O["Access, payroll, benefits, facilities,<br/>equipment, and training owners"]
+    V["Lifecycle Coordinator<br/>verifies the effective state"]
+    D["People Operations Director<br/>accountable for lifecycle governance"]
+    L["Legal or Employee-Relations Authority<br/>directs sensitive or disputed actions"]
+
+    P --> C --> M --> O --> V
+    D --- C
+    D --- V
+    L -. "when required" .-> P
+    L -. "when required" .-> D
+```
 
 ## Authorized Event and Case Sources
 

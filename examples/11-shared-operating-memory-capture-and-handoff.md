@@ -60,7 +60,7 @@ procedure concrete. That choice is not a framework requirement.
 ## Memory Flow at a Glance
 
 ```mermaid
-flowchart LR
+flowchart TB
     F["Find existing memory<br/>and governing sources"]
     S{"Material memory<br/>needed?"}
     C["Capture or reference<br/>the source safely"]
@@ -413,7 +413,7 @@ The recipient:
 ### Handoff Detail
 
 ```mermaid
-flowchart LR
+flowchart TB
     S["Sender records<br/>state, decisions, evidence,<br/>risks, and next action"]
     A{"Recipient has<br/>access, authority,<br/>and sufficient context?"}
     C["Accept handoff<br/>and assume next action"]

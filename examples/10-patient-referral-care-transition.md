@@ -42,7 +42,7 @@ clinical timeline, or jurisdiction-specific legal rule.
 ## Procedure at a Glance
 
 ```mermaid
-flowchart LR
+flowchart TB
     R["Clinician authorizes referral"] --> E{"Emergency or<br/>immediate risk?"}
     E -- "Yes" --> X["Follow emergency<br/>and clinician direction"]
     E -- "No" --> V["Verify patient, choice,<br/>recipient, and authority"]
@@ -119,6 +119,26 @@ unconfirmed handoffs. A responsible person validates its output. AI may not
 diagnose, assign urgency, select treatment, decide consent or permissible
 disclosure, accept the referral, or tell a patient that clinical responsibility
 has transferred.
+
+### Clinical Responsibility Across the Handoff
+
+```mermaid
+flowchart TB
+    R["Referring Licensed Clinician<br/>authorizes referral and retains responsibility"]
+    C["Referral Coordinator<br/>assembles, transmits, tracks, and escalates"]
+    T["Receiving Referral Team<br/>confirms receipt and routes for review"]
+    L["Receiving Licensed Clinician<br/>accepts, redirects, or declines"]
+    H{"Responsibility<br/>accepted?"}
+    A["Receiving care owner<br/>assumes the accepted responsibility"]
+    E["Referring clinician and continuity owner<br/>resolve the incomplete handoff"]
+    P["Privacy and information authority<br/>bounds every disclosure"]
+
+    R --> C --> T --> L --> H
+    H -- "Yes" --> A
+    H -- "No" --> E --> R
+    P --- C
+    P --- T
+```
 
 ## 3. Trigger, Prerequisites, Inputs, and Authoritative Sources
 

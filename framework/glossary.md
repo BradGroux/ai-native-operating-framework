@@ -2,6 +2,31 @@
 
 **Status:** Approved initial framework baseline.
 
+## Core Language Map
+
+```mermaid
+flowchart TB
+    F["Operating framework<br/>principles, standards, responsibilities, and methods"]
+    C["Six framework concerns<br/>Intent, Responsibility, Work,<br/>Control, Assurance, and Learning"]
+    S["Business standards<br/>agreed expectations"]
+    O["SOPs<br/>documented recurring work"]
+    M["Shared operating memory<br/>sources, context, decisions,<br/>state, evidence, and lessons"]
+    P["Authorized people and AI<br/>perform and improve work"]
+    A["Accountable owner<br/>answerable for outcomes"]
+
+    F --> C
+    F --> S --> O --> P
+    C --> O
+    M --> O
+    P --> M
+    A --- S
+    A --- O
+    A --- P
+```
+
+The map shows how the glossary's core terms relate. The definitions below remain
+authoritative.
+
 ## Framework language
 
 **AI-Native Operating Framework**<br>

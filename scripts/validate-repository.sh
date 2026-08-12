@@ -156,6 +156,8 @@ if [[ "$expected_diagrams" != "$rendered_diagrams" ]]; then
 fi
 echo "PASS: Mermaid rendering: $rendered_diagrams diagrams"
 
+python3 scripts/validate-mermaid-legibility.py "$mermaid_output" "$mermaid_assets"
+
 "$gitleaks_command" dir . --no-banner --redact
 "$gitleaks_command" git . --no-banner --redact
 echo "PASS: Gitleaks working-tree and Git-history scans"

@@ -38,7 +38,7 @@ commitment through review, negotiation, execution, and operational handoff.
 ## Procedure at a Glance
 
 ```mermaid
-flowchart LR
+flowchart TB
     Q["Register and qualify"] --> S["Define solution<br/>and delivery boundary"]
     S --> P["Build and approve pricing"]
     P --> R["Prepare proposal"]
@@ -109,6 +109,23 @@ AI may help summarize customer material, compare versions, draft from approved
 content, identify missing approvals, or organize obligations. Responsible
 owners validate its output. AI may not invent capability, fabricate evidence,
 accept terms, make customer commitments, approve exceptions, or sign.
+
+### Commitment Authority and Handoff
+
+```mermaid
+flowchart TB
+    A["Account Executive<br/>owns discovery and customer coordination"]
+    D["Deal Owner<br/>controls the deal record and review"]
+    O["Delivery, Product, Pricing, Legal,<br/>Security, Privacy, and Risk Authorities"]
+    S["Signature Authority<br/>executes the approved agreement"]
+    C["Contract Administrator<br/>preserves the authoritative version"]
+    H["Delivery, Billing, Support,<br/>and Obligation Owners accept handoff"]
+    E["Chief Commercial Officer<br/>accountable for governance and exceptions"]
+
+    A --> D --> O --> S --> C --> H
+    E --- D
+    E --- S
+```
 
 ## 3. Trigger, Prerequisites, Inputs, and Authoritative Sources
 
