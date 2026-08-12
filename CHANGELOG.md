@@ -2,7 +2,26 @@
 
 All material framework releases and repository changes will be recorded here.
 
-## 1.0.0 — 2026-07-30; refreshed 2026-08-03
+## 1.0.0 — 2026-07-30; refreshed 2026-08-03 and 2026-08-11
+
+### Visualization and readability refresh — 2026-08-11
+
+- Reflowed wide Mermaid diagrams into document-width layouts so labels remain
+  readable on normal repository and document surfaces.
+- Added thirteen focused diagrams covering the charter, core terminology,
+  example anatomy, and authority or handoff relationships in Examples 1–10.
+- Increased the rendered diagram set from twenty-six to thirty-nine without
+  changing framework requirements or imposing a universal business lifecycle.
+- Added validation for rendered width, aspect ratio, and expected visualization
+  coverage so unreadable layouts fail the repository gate.
+- Recorded the bounded same-version documentation republication policy in
+  [ADR-010](decisions/0010-same-version-documentation-republication.md).
+
+This refresh changes presentation and repository validation only. It does not
+change the charter's business meaning, the six concerns, the eight SOP content
+areas, shared operating memory requirements, the six maintenance activities,
+governance authority, example status, licensing, or professional boundaries.
+The original 2026-07-30 effective date remains unchanged.
 
 ### Commons release-pin correction — 2026-08-03
 
