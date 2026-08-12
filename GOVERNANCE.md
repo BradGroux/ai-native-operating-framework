@@ -86,7 +86,7 @@ change never amends this framework automatically.
 ## Decision Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     P["Written proposal"]
     R["Review against charter,<br/>framework, and evidence"]
     D{"Decision"}
@@ -166,7 +166,7 @@ hold governance authority or substitute for domain expertise.
 ## Community Feedback Loop
 
 ```mermaid
-flowchart LR
+flowchart TB
     F["Feedback received"]
     T["Record context, evidence,<br/>and requested outcome"]
     C{"Triage"}

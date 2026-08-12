@@ -43,19 +43,19 @@ The framework also defines:
 ```mermaid
 flowchart TB
     B["Business work"]
-    I["Intent<br/>purpose, scope, outcome"]
-    R["Responsibility<br/>ownership and authority"]
-    W["Work<br/>inputs through outputs"]
-    C["Control<br/>boundaries and recovery"]
-    A["Assurance<br/>verification and evidence"]
-    L["Learning<br/>review and improvement"]
+    I["Intent"]
+    R["Responsibility"]
+    W["Work"]
+    C["Control"]
+    A["Assurance"]
+    L["Learning"]
 
     I --- B
     R --- B
     W --- B
-    C --- B
-    A --- B
-    L --- B
+    B --- C
+    B --- A
+    B --- L
 ```
 
 The concerns surround the work; they are not phases or a mandatory sequence.

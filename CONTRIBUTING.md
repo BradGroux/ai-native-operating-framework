@@ -62,7 +62,7 @@ professional validation.
 ## Contribution Flow at a Glance
 
 ```mermaid
-flowchart LR
+flowchart TB
     N["Identify and describe<br/>the contribution need"]
     C{"Classify the change"}
     E["Follow the example<br/>contribution SOP"]

@@ -57,6 +57,29 @@ temporary or exceptional programs.
 The framework concerns how work is understood, owned, performed, controlled,
 verified, and improved.
 
+## Charter at a Glance
+
+```mermaid
+flowchart TB
+    B["Business purpose and outcomes"]
+    F["AI-Native Operating Framework<br/>shared business meaning"]
+    S["Standards and SOPs<br/>for existing lifecycles"]
+    P["People and AI<br/>participate within authority"]
+    H["Accountable people<br/>own outcomes and decisions"]
+    E["Evidence, memory, and learning<br/>sustain reliable work"]
+
+    B --> F --> S --> P
+    H --- F
+    H --- S
+    H --- P
+    S --> E
+    P --> E
+    E -. "improves" .-> S
+```
+
+The framework strengthens business work without becoming a technology layer or
+replacing the lifecycle through which that work already operates.
+
 ## Founding Commitments
 
 ### Business operations come first

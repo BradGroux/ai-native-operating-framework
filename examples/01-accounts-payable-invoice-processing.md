@@ -42,7 +42,7 @@ These thresholds and role assignments exist only to make the example concrete.
 ## Procedure at a Glance
 
 ```mermaid
-flowchart LR
+flowchart TB
     R["Receive and register"] --> V["Validate invoice"]
     V --> M["Classify and match"]
     M --> Q{"Exception?"}
@@ -108,6 +108,24 @@ or payment.
 
 No participant may split, recode, or otherwise alter an invoice to avoid an
 approval threshold.
+
+### Authority and Handoff
+
+```mermaid
+flowchart TB
+    C["Controller<br/>accountable for process and controls"]
+    M["AP Manager<br/>coordinates work and exceptions"]
+    P["AP Processor<br/>registers, validates, and routes"]
+    D["Business and control owners<br/>resolve facts within their authority"]
+    A["Authorized approver<br/>approves the invoice or exception"]
+    R["Payment Releaser<br/>acts only on an approved record"]
+    E["Internal Control or Audit<br/>independently tests operation"]
+
+    C --- M
+    M --> P --> D --> A --> R
+    E -. "tests" .-> C
+    E -. "tests" .-> A
+```
 
 ## 3. Trigger, Prerequisites, Inputs, and Authoritative Sources
 

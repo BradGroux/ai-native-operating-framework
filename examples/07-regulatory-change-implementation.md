@@ -34,7 +34,7 @@ The example uses no real regulation or deadline and makes no compliance claim.
 ## Procedure at a Glance
 
 ```mermaid
-flowchart LR
+flowchart TB
     S["Authenticate official source"] --> I["Approve interpretation<br/>and applicability"]
     I --> A["Assess operational impact"]
     A --> P["Approve implementation plan"]
@@ -102,6 +102,22 @@ questions, draft controlled material, or identify missing evidence. A qualified
 authority validates its output. AI may not determine legal applicability,
 create the organization's compliance position, approve risk, or submit a
 regulatory statement without authority.
+
+### Interpretation, Execution, and Assurance
+
+```mermaid
+flowchart TB
+    S["Official source<br/>authenticated requirement"]
+    L["Legal or Regulatory Authority<br/>interprets applicability"]
+    C["Regulatory Change Lead<br/>coordinates the approved response"]
+    O["Process, Control, Policy, Data,<br/>and Communications Owners"]
+    A["Independent Assurance Owner<br/>tests readiness and evidence"]
+    R["Risk Owner and Executive Sponsor<br/>decide residual exposure within authority"]
+
+    S --> L --> C --> O --> A --> R
+    A -. "gap" .-> C
+    R -. "approved position" .-> C
+```
 
 ## 3. Trigger, Prerequisites, Inputs, and Authoritative Sources
 

@@ -365,7 +365,7 @@ operating-memory-map/
 ### Relationship View
 
 ```mermaid
-flowchart LR
+flowchart TB
     M["Operating memory map<br/>scope, owner, authority,<br/>status, and access"]
     D["Controlled document system<br/>standards and SOPs"]
     C["Case or work system<br/>current state and handoffs"]

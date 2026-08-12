@@ -33,7 +33,7 @@ example that:
 ## Contribution Flow at a Glance
 
 ```mermaid
-flowchart LR
+flowchart TB
     S["Assess scope<br/>and duplication"]
     P["Declare provenance<br/>and review status"]
     D["Prepare safe sources<br/>and write the SOP"]

@@ -35,7 +35,7 @@ evidence described here.
 ## Procedure at a Glance
 
 ```mermaid
-flowchart LR
+flowchart TB
     C["Clarify outcome"] --> R["Classify risk"]
     R --> I["Design and implement"]
     I --> P["Independent review"]
@@ -100,6 +100,24 @@ One person may hold several roles for low-risk work, but no one may both create
 and provide the only independent review of a heightened change. AI may propose,
 implement, review, or analyze work only within assigned access and authority.
 Accountable people remain responsible for approvals and risk acceptance.
+
+### Authority and Handoff
+
+```mermaid
+flowchart TB
+    E["Software Delivery Executive<br/>accountable for policy and material risk"]
+    O["Business and Change Owners<br/>define outcome and own the work record"]
+    I["Technical Lead and Implementer<br/>design and produce the change"]
+    R["Independent, Quality, and Control Reviewers<br/>assess within assigned authority"]
+    D["Release Authority<br/>makes the release decision"]
+    P["Operations Owner<br/>accepts operability and support handoff"]
+    X["Incident Authority<br/>directs containment and restoration"]
+
+    E --- O
+    O --> I --> R --> D --> P
+    P -. "material failure" .-> X
+    X -. "recovery evidence" .-> O
+```
 
 ## 3. Trigger, Prerequisites, Inputs, and Authoritative Sources
 

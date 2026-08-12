@@ -46,6 +46,23 @@ examples instead follow their domains' natural incident-response and
 joiner-mover-leaver structures. Both provide content traceability separately.
 None of these structures is a required template.
 
+## Example Anatomy
+
+```mermaid
+flowchart TB
+    R["Example record<br/>status, provenance, and limits"]
+    S["Scenario overview<br/>setting and assumptions"]
+    V["Procedure at a glance<br/>visual orientation"]
+    O["Complete SOP<br/>all eight content areas"]
+    A["Framework annotation<br/>six-concern mapping"]
+    B["Domain boundary<br/>illustrative choices are not requirements"]
+
+    R --> S --> V --> O --> A --> B
+```
+
+The visual gives readers a route through an example; it does not prescribe the
+layout of an organization's own SOP.
+
 ## Provenance Labels
 
 Every example uses one of these labels:

@@ -119,6 +119,26 @@ after immediate safety is established. It may not direct rescue, diagnose
 injuries, assess technical safety, conduct witness interviews autonomously, or
 authorize reentry or restart.
 
+### Authority Flow
+
+```mermaid
+flowchart TB
+    W["Any person<br/>warns, reports, and stops their own unsafe work"]
+    S["Site Superintendent<br/>directs the initial site response"]
+    E["Emergency Services or Public Authority<br/>assumes lawful incident authority"]
+    Q["Safety Lead and Qualified Specialists<br/>assess controls within competence"]
+    D["Designated authority<br/>decides release, reentry, or restart"]
+    P["Project Executive<br/>remains accountable for governance"]
+
+    W --> S
+    S --> E
+    S --> Q
+    E --> Q
+    Q --> D
+    P --- S
+    P --- D
+```
+
 ## Activation Conditions and Authoritative Direction
 
 This procedure begins when any person observes or receives a credible report of:

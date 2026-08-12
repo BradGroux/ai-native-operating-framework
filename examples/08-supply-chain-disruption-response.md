@@ -34,7 +34,7 @@ service tradeoffs outside standing authority.
 ## Procedure at a Glance
 
 ```mermaid
-flowchart LR
+flowchart TB
     D["Detect disruption"] --> A["Activate response"]
     A --> C["Contain immediate exposure"]
     C --> I["Assess end-to-end impact"]
@@ -106,6 +106,21 @@ scenarios, summarize supplier updates, or draft internal options. People
 responsible for sources and decisions validate its output. AI may not invent
 supply facts, approve a substitution, choose customer allocation, change a
 commitment, or accept risk.
+
+### Decision Authority During Disruption
+
+```mermaid
+flowchart TB
+    D["Supply Disruption Director<br/>coordinates the temporary response"]
+    O["Procurement, Planning, Operations,<br/>Logistics, Finance, and Commercial Owners"]
+    S["Quality, Product, Legal, Trade,<br/>Risk, and Regulatory Authorities"]
+    C["Chief Operations Officer<br/>decides enterprise tradeoffs and material risk"]
+    E["Domain owners<br/>execute approved actions and communications"]
+    H["Continuity Owner<br/>connects recovery and handoff"]
+
+    D --> O --> S --> C --> E --> H
+    E -. "new evidence" .-> D
+```
 
 ## 3. Trigger, Prerequisites, Inputs, and Authoritative Sources
 

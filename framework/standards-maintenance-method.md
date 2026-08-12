@@ -24,7 +24,7 @@ on the business processes being documented.
 ## Method at a Glance
 
 ```mermaid
-flowchart LR
+flowchart TB
     U["Understand"] --> D["Document"] --> V["Validate"] --> A["Approve"] --> S["Use"] --> I["Improve"]
     V -. "missing meaning" .-> U
     V -. "document gap" .-> D
