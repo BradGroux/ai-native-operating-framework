@@ -214,6 +214,21 @@ Before release, verify local links and headings, canonical framework invariants,
 example coverage, diagrams, release metadata, publication safety, and secret
 scanning through the repository's repeatable validation gate. Record any
 unavailable check and its consequence rather than representing it as passed.
+
+An explicitly authorized documentation-only refresh may republish the current
+semantic version when it changes only presentation, navigation, accessibility,
+publication hygiene, or repository validation and does not change framework or
+operating meaning. The refresh must be dated in the changelog, pass the full
+release gate against the exact candidate, preserve prior release history, move
+the annotated tag only with an exact old-object lease, and receive final
+tag-and-release readback. Changes to the charter's meaning, framework
+requirements, governance authority, substantive operating guidance, licensing,
+or release scope require a new semantic version. The decision and limits are
+recorded in [ADR-010](decisions/0010-same-version-documentation-republication.md).
+
+ADR-009 remains controlling for corrections to adopted external release pins;
+those corrections normally require a new semantic version.
+
 The version 1.0.0 transition is recorded in the approved
 [prepublication release-hardening decision](project/planning/prepublication-release-hardening-decision-2026-07-30.md).
 
@@ -228,7 +243,7 @@ The approved initial release baseline is:
 
 - **Version:** 1.0.0
 - **Effective date:** 2026-07-30
-- **Documentation refresh date:** 2026-08-03
+- **Documentation refresh dates:** 2026-08-03 and 2026-08-11
 - **Repository version:** annotated tag `v1.0.0`
 - **Material changes:** recorded in the [changelog](CHANGELOG.md)
 - **Known limitations:** all examples are illustrative and not
