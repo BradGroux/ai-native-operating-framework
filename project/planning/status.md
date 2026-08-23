@@ -24,13 +24,24 @@
 - [x] Sanitized one-root version 1.0.0 release rebuilt and verified
 - [x] Repeatable validation, CI, ownership, and sensitive-disclosure safeguards
       prepared
+- [x] Open Framework Commons v1.1.0 reviewed and adopted
+- [x] Forward-only semantic versioning accepted for v1.1.0 and later releases
+- [x] Version 1.1.0 release scope and open-issue dispositions documented
 
 ## Current focus
 
-Stage 2 delivery, migration, independent review, and owner approval are
+Version 1.1.0 is the prepared release candidate. It adopts Open Framework
+Commons v1.1.0 at an exact immutable commit, corrects the process-application
+wording reported in issue 17, and replaces same-version republication with
+forward-only release tags under ADR-011. It does not become the current release
+until merged-tree, GitHub Actions, tag, release, and readback gates pass. The
+[release record](../releases/v1.1.0.md) contains the complete scope,
+compatibility, verification, and limitation statement.
+
+Stage 2 delivery, migration, independent review, and owner approval remain
 complete. Tickets 01 through 14 meet their documented acceptance criteria. The
-owner subsequently approved shared operating memory as a version 1.0.0
-extension under [ADR-007](../../decisions/0007-shared-operating-memory.md).
+owner approved shared operating memory as a version 1.0.0 extension under
+[ADR-007](../../decisions/0007-shared-operating-memory.md).
 Repository-wide integration and internal review of that extension are
 complete. Two independent AI-assisted reviewers completed the source-bounded
 [application review](../reviews/shared-operating-memory-independent-application-review-2026-07-30.md)
@@ -38,23 +49,23 @@ and [adversarial review](../reviews/shared-operating-memory-independent-adversar
 Neither identified a blocker, material finding, or editorial finding; the
 [accountable disposition](../reviews/shared-operating-memory-independent-reviews-disposition-2026-07-30.md)
 accepts six observations without changing canonical meaning. The local
-sanitized version 1.0.0 baseline has been rebuilt as one root commit and its
-annotated tag identifies that exact tree.
+sanitized version 1.0.0 baseline and its republication history remain preserved
+as the superseded initial release.
 
 All examples remain illustrative and not domain-validated. That boundary limits
 their operational claims; it does not make the framework baseline incomplete.
 The designated public repository is
 [`github.com/bradgroux/ai-native-operating-framework`](https://github.com/bradgroux/ai-native-operating-framework).
 Publication and repository configuration are operational release actions, not
-remaining framework design work.
+framework design work.
 
 The release package now includes a repeatable local validation command, an
 equivalent GitHub workflow, explicit code ownership, and a private
 sensitive-disclosure policy under the approved
 [release-hardening decision](prepublication-release-hardening-decision-2026-07-30.md).
-Publication must use an isolated checkout containing only the sanitized `main`
-baseline and its annotated `v1.0.0` tag; review worktrees and development
-branches are not publication sources.
+Publication must use an isolated checkout of the reviewed release candidate;
+review worktrees and unrelated development branches are not publication
+sources. The v1.1.0 annotated tag will be new and immutable.
 
 ## Accepted discovery decisions
 
