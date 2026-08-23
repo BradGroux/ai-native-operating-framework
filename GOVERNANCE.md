@@ -2,7 +2,7 @@
 
 **Status:** Approved initial repository governance<br>
 **Founding steward:** Brad Groux<br>
-**Last reviewed:** 2026-08-03
+**Last reviewed:** 2026-08-22
 
 ## Purpose
 
@@ -44,9 +44,9 @@ by framework examples.
 
 The AI-Native Operating Framework adopts
 [Open Framework Commons](https://github.com/BradGroux/open-framework-commons)
-[`v1.0.0`](https://github.com/BradGroux/open-framework-commons/tree/v1.0.0),
+[`v1.1.0`](https://github.com/BradGroux/open-framework-commons/tree/v1.1.0),
 release commit
-[a0f0d384e9010a65d1a21a324b4c912433d5e0<wbr>31](https://github.com/BradGroux/open-framework-commons/commit/a0f0d384e9010a65d1a21a324b4c912433d5e031).
+[f25a2b89b4aed95984fd235e2e229efe52c125d8](https://github.com/BradGroux/open-framework-commons/commit/f25a2b89b4aed95984fd235e2e229efe52c125d8).
 Commons is shared ecosystem context, not a parent framework, certification,
 implementation layer, or governing authority over this framework.
 
@@ -54,13 +54,15 @@ The original accountable adoption is recorded in
 [ADR-008](decisions/0008-adopt-open-framework-commons-v1-0-0.md). The corrected
 release pin and release-integrity exception are recorded in
 [ADR-009](decisions/0009-correct-open-framework-commons-v1-0-0-release-pin.md).
+The current v1.1.0 adoption is recorded in
+[ADR-012](decisions/0012-adopt-open-framework-commons-v1-1-0.md).
 
 | Disposition | AI-Native alignment |
 |---|---|
 | Adopted shared principles | All nine Commons principles are adopted: people first; own the method and rent the tool; play the long game; contribute before extracting; steward what matters; keep products independent; build in the open; learn honestly; and use technology as an amplifier. |
 | Product-local guidance | The charter, six concerns, eight SOP content areas, shared operating memory standard, six maintenance activities, terminology, examples, research, contribution process, governance, roadmap, releases, and implementation choices remain owned here. |
-| Deferred shared principles | None for Commons `v1.0.0`. |
-| Explicit deviations | None for Commons `v1.0.0`. |
+| Deferred shared principles | None for Commons `v1.1.0`. |
+| Explicit deviations | None for Commons `v1.1.0`. |
 
 The people-first principle means that people supply business purpose, judgment,
 and accountability. It does not narrow this framework's approved meaning of
@@ -70,18 +72,17 @@ principle is an ecosystem value, not an additional contribution prerequisite,
 commercial restriction, business concern, SOP content requirement, or method
 activity.
 
-The Commons `v1.0.0` tag moved after the original adoption review even though
-Commons Governance describes annotated release tags as immutable. The founding
-steward accepts the corrected pin as a one-time release-integrity exception
-because no downstream use is recorded. This is not a precedent for silently
-following a moved tag; a later tag movement requires a visible decision and
-normally a new Commons version.
+Commons v1.1.0 recognizes Focus Operating Framework as a fifth independent
+product. AI-Native accepts that scope addition as ecosystem context. It does not
+change this framework's purpose, method, requirements, authority, or release
+ownership, and it does not create a dependency on Focus.
 
-No material principle, method, or product-authority conflict with the corrected
-Commons `v1.0.0` content is recorded. If a later Commons revision appears to
-conflict with this framework, the conflict must remain visible until the
-responsible authority decides whether to adopt, defer, or deviate. A Commons
-change never amends this framework automatically.
+The Commons `v1.0.0` tag movement and AI-Native's one-time correction remain
+visible in ADR-009 as historical release-integrity evidence. Commons v1.1.0 uses
+a new immutable annotated tag. If a later Commons revision appears to conflict
+with this framework, the conflict must remain visible until the responsible
+authority decides whether to adopt, defer, or deviate. A Commons change never
+amends this framework automatically.
 
 ## Decision Flow
 
@@ -215,19 +216,18 @@ example coverage, diagrams, release metadata, publication safety, and secret
 scanning through the repository's repeatable validation gate. Record any
 unavailable check and its consequence rather than representing it as passed.
 
-An explicitly authorized documentation-only refresh may republish the current
-semantic version when it changes only presentation, navigation, accessibility,
-publication hygiene, or repository validation and does not change framework or
-operating meaning. The refresh must be dated in the changelog, pass the full
-release gate against the exact candidate, preserve prior release history, move
-the annotated tag only with an exact old-object lease, and receive final
-tag-and-release readback. Changes to the charter's meaning, framework
-requirements, governance authority, substantive operating guidance, licensing,
-or release scope require a new semantic version. The decision and limits are
-recorded in [ADR-010](decisions/0010-same-version-documentation-republication.md).
+Beginning with version 1.1.0, releases use forward-only semantic versioning and
+published annotated tags are immutable. Backward-compatible documentation or
+metadata corrections use a patch version; backward-compatible additions or
+changes to governance, adopted ecosystem context, release scope, or framework
+capability use a minor version; incompatible framework meaning or requirements
+use a major version. The steward records the classification and rationale.
 
-ADR-009 remains controlling for corrections to adopted external release pins;
-those corrections normally require a new semantic version.
+[ADR-011](decisions/0011-forward-only-semantic-versioning.md) governs this
+policy. [ADR-010](decisions/0010-same-version-documentation-republication.md)
+remains historical evidence for the bounded v1.0.0 republications but does not
+authorize a tag move from v1.1.0 forward. ADR-009 remains controlling history
+for the corrected Commons v1.0.0 pin.
 
 The version 1.0.0 transition is recorded in the approved
 [prepublication release-hardening decision](project/planning/prepublication-release-hardening-decision-2026-07-30.md).
@@ -239,20 +239,20 @@ alternate route are maintained in the
 
 ### Prepared Release Baseline
 
-The approved initial release baseline is:
+The prepared release candidate is:
 
-- **Version:** 1.0.0
-- **Effective date:** 2026-07-30
-- **Documentation refresh dates:** 2026-08-03 and 2026-08-11
-- **Repository version:** annotated tag `v1.0.0`
+- **Version:** 1.1.0 candidate
+- **Planned effective date:** 2026-08-22
+- **Expected repository version:** annotated tag `v1.1.0`
 - **Material changes:** recorded in the [changelog](CHANGELOG.md)
+- **Release record:** [version 1.1.0](project/releases/v1.1.0.md)
 - **Known limitations:** all examples are illustrative and not
   domain-validated; two source-bounded independent AI reviews of the shared
   operating memory extension are complete, but the standard has not received
   human records, privacy, security, legal, knowledge-management, or
   business-continuity review; organizational use and broader governance have
   not been exercised
-- **Superseded public version:** none
+- **Current public version until candidate publication:** 1.0.0
 - **Responsible steward:** Brad Groux
 - **Publication destination:**
   [`github.com/bradgroux/ai-native-operating-framework`](https://github.com/bradgroux/ai-native-operating-framework)

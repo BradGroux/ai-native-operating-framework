@@ -1,5 +1,9 @@
 # Reviews
 
+- [Open-issue audit disposition](open-issue-audit-disposition-2026-08-22.md)
+  — accountable audit and disposition of issues 17 through 20 for the version
+  1.1.0 release.
+
 - [Open Framework Commons v1.0.0 release-integrity review](open-framework-commons-v1-0-0-release-integrity-review-2026-08-03.md)
   — independent standards and specification follow-up for the immutable commit
   links, publication allowlist, and prior product tag evidence.

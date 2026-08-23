@@ -23,9 +23,9 @@ outside its documented contribution and governance processes.
 
 The current repository adopts
 [Open Framework Commons](https://github.com/BradGroux/open-framework-commons)
-[`v1.0.0`](https://github.com/BradGroux/open-framework-commons/tree/v1.0.0),
+[`v1.1.0`](https://github.com/BradGroux/open-framework-commons/tree/v1.1.0),
 release commit
-[a0f0d384e9010a65d1a21a324b4c912433d5e0<wbr>31](https://github.com/BradGroux/open-framework-commons/commit/a0f0d384e9010a65d1a21a324b4c912433d5e031),
+[f25a2b89b4aed95984fd235e2e229efe52c125d8](https://github.com/BradGroux/open-framework-commons/commit/f25a2b89b4aed95984fd235e2e229efe52c125d8),
 as shared ecosystem context.
 
 Commons supplies shared principles and boundaries; it is not a parent
@@ -104,9 +104,13 @@ requirements.
 
 ## Current Status
 
-Version 1.0.0 is the complete, owner-approved initial release, dated
-2026-07-30 and refreshed on 2026-08-03 to record the documentation-only Commons
-adoption and corrected Commons release pin.
+Version 1.1.0 is the prepared release candidate for 2026-08-22. It adopts
+Commons v1.1.0, corrects the framework-application wording for new and existing
+business processes, and establishes forward-only release versioning. It does
+not become the current release until the candidate and merged release gates
+pass and the annotated tag and GitHub release are published. The charter, six
+concerns, eight SOP content areas, shared operating memory requirements, six
+maintenance activities, and human-accountability boundary remain unchanged.
 
 - [Stage 2 specification](project/specifications/stage-2.md)
 - [Stage 2 completion report](project/reviews/stage-2-completion-review-2026-07-30.md)
@@ -120,6 +124,7 @@ adoption and corrected Commons release pin.
 - [Independent memory application review](project/reviews/shared-operating-memory-independent-application-review-2026-07-30.md)
 - [Independent memory adversarial review](project/reviews/shared-operating-memory-independent-adversarial-review-2026-07-30.md)
 - [Independent memory reviews disposition](project/reviews/shared-operating-memory-independent-reviews-disposition-2026-07-30.md)
+- [Version 1.1.0 release record](project/releases/v1.1.0.md)
 - [Current project status](project/planning/status.md)
 
 All eleven examples are approved for inclusion as **Illustrative; not

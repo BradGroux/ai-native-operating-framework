@@ -2,6 +2,49 @@
 
 All material framework releases and repository changes will be recorded here.
 
+## 1.1.0 — 2026-08-22
+
+### Changed
+
+- Adopted
+  [Open Framework Commons v1.1.0](https://github.com/BradGroux/open-framework-commons/releases/tag/v1.1.0)
+  at exact release commit
+  [f25a2b89b4aed95984fd235e2e229efe52c125d8](https://github.com/BradGroux/open-framework-commons/commit/f25a2b89b4aed95984fd235e2e229efe52c125d8).
+  Commons adds Focus Operating Framework as a fifth independent product and
+  adds repository-stewardship surfaces; its nine shared principles and product
+  independence boundaries are unchanged.
+- Changed the framework-application lead-in from "an existing process" to "a
+  business process" so it agrees with the existing list of new and existing
+  application targets. This resolves issue 17 without changing framework
+  meaning.
+- Replaced future same-version republication with forward-only semantic
+  versioning. Published tags are immutable after v1.0.0; documentation-only
+  corrections receive a new version. ADR-010 remains historical evidence of
+  the bounded v1.0.0 republications, and ADR-011 governs releases from v1.1.0
+  forward.
+- Bumped the current framework, citation, governance, changelog, and release
+  surfaces from 1.0.0 to 1.1.0. The v1.0.0 tag remains unchanged.
+
+### Added
+
+- A machine-readable `VERSION` file and validation that keeps it synchronized
+  with citation and release metadata.
+- ADR-011 for forward-only semantic versioning and ADR-012 for the accountable
+  Commons v1.1.0 adoption.
+- A maintained release index, a complete v1.1.0 release record, and an
+  accountable disposition of issues 17 through 20.
+
+### Compatibility and limits
+
+Version 1.1.0 changes ecosystem context, release governance, and one editorial
+sentence. It does not change framework business meaning, requirements,
+professional boundaries, example status, licensing, or implementation
+independence. All examples remain illustrative and not domain-validated. The
+shared operating memory standard still has no human records, privacy, security,
+legal, knowledge-management, or business-continuity review. Those limits are
+not represented as completed validation or as blockers to publishing the
+framework documentation.
+
 ## 1.0.0 — 2026-07-30; refreshed 2026-08-03 and 2026-08-11
 
 ### Visualization and readability refresh — 2026-08-11

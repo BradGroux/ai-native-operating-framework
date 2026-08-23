@@ -13,6 +13,8 @@ from urllib.parse import unquote
 
 REPOSITORY_ROOT = Path(__file__).resolve().parents[1]
 EXCLUDED_DIRECTORIES = {".git", ".venv", "node_modules"}
+CURRENT_RELEASE_VERSION = "1.1.0"
+CURRENT_RELEASE_DATE = "2026-08-22"
 
 EXPECTED_CONCERNS = [
     "Intent",
@@ -112,6 +114,9 @@ REQUIRED_RELEASE_FILES = [
     "LICENSE.md",
     "README.md",
     "SECURITY.md",
+    "VERSION",
+    "project/releases/README.md",
+    "project/releases/v1.1.0.md",
     "scripts/puppeteer-ci-config.json",
     "scripts/validate-repository.py",
     "scripts/validate-repository.sh",
@@ -140,6 +145,9 @@ EMAIL_PATTERN = re.compile(
 ALLOWED_PUBLIC_COMMIT_IDENTIFIERS = {
     # Open Framework Commons v1.0.0
     "a0f0d384e9010a65d1a21a324b4c912433d5e031",
+    # Open Framework Commons v1.1.0 annotated tag object and peeled commit
+    "79e5f06dab46f262cad1d1daf7840e683ffc3880",
+    "f25a2b89b4aed95984fd235e2e229efe52c125d8",
     # actions/checkout v6
     "d23441a48e516b6c34aea4fa41551a30e30af803",
     # actions/setup-python v7
@@ -591,12 +599,20 @@ def validate_release_surface(validation: Validation) -> None:
             f"missing required release file: {required_file}",
         )
 
+    version_path = REPOSITORY_ROOT / "VERSION"
+    if version_path.is_file():
+        version_text = version_path.read_text(encoding="utf-8").strip()
+        validation.require(
+            version_text == CURRENT_RELEASE_VERSION,
+            f"VERSION: expected {CURRENT_RELEASE_VERSION}, found {version_text}",
+        )
+
     citation_text = (REPOSITORY_ROOT / "CITATION.cff").read_text(encoding="utf-8")
     citation_requirements = [
         "cff-version: 1.2.0",
         "license: MIT",
-        "version: 1.0.0",
-        "date-released: 2026-07-30",
+        f"version: {CURRENT_RELEASE_VERSION}",
+        f"date-released: {CURRENT_RELEASE_DATE}",
         "https://github.com/bradgroux/ai-native-operating-framework",
     ]
     for requirement in citation_requirements:
@@ -622,7 +638,7 @@ def validate_release_surface(validation: Validation) -> None:
 
     validation.pass_result(
         f"Release surface: {len(REQUIRED_RELEASE_FILES)} required files and "
-        "version 1.0.0 metadata checked"
+        f"version {CURRENT_RELEASE_VERSION} metadata checked"
     )
 
 

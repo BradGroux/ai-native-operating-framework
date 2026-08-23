@@ -184,7 +184,7 @@ people or AI to rediscover the same lesson.
 
 ## Applying the Framework
 
-An organization applies the framework to an existing process by:
+An organization applies the framework to a business process by:
 
 1. examining the process through each of the six concerns;
 2. resolving missing, unclear, or contradictory business meaning;
