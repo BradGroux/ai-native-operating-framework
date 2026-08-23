@@ -30,11 +30,10 @@
 
 ## Current focus
 
-Version 1.1.0 is the prepared release candidate. It adopts Open Framework
+Version 1.1.0 is the current approved release baseline. It adopts Open Framework
 Commons v1.1.0 at an exact immutable commit, corrects the process-application
 wording reported in issue 17, and replaces same-version republication with
-forward-only release tags under ADR-011. It does not become the current release
-until merged-tree, GitHub Actions, tag, release, and readback gates pass. The
+forward-only release tags under ADR-011. The
 [release record](../releases/v1.1.0.md) contains the complete scope,
 compatibility, verification, and limitation statement.
 
@@ -65,7 +64,7 @@ sensitive-disclosure policy under the approved
 [release-hardening decision](prepublication-release-hardening-decision-2026-07-30.md).
 Publication must use an isolated checkout of the reviewed release candidate;
 review worktrees and unrelated development branches are not publication
-sources. The v1.1.0 annotated tag will be new and immutable.
+sources. The v1.1.0 annotated tag is new and immutable.
 
 ## Accepted discovery decisions
 
