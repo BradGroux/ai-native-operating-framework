@@ -104,13 +104,12 @@ requirements.
 
 ## Current Status
 
-Version 1.1.0 is the prepared release candidate for 2026-08-22. It adopts
+Version 1.1.0 is the current owner-approved release, dated 2026-08-22. It adopts
 Commons v1.1.0, corrects the framework-application wording for new and existing
-business processes, and establishes forward-only release versioning. It does
-not become the current release until the candidate and merged release gates
-pass and the annotated tag and GitHub release are published. The charter, six
-concerns, eight SOP content areas, shared operating memory requirements, six
-maintenance activities, and human-accountability boundary remain unchanged.
+business processes, and establishes forward-only release versioning. The
+charter, six concerns, eight SOP content areas, shared operating memory
+requirements, six maintenance activities, and human-accountability boundary
+remain unchanged.
 
 - [Stage 2 specification](project/specifications/stage-2.md)
 - [Stage 2 completion report](project/reviews/stage-2-completion-review-2026-07-30.md)

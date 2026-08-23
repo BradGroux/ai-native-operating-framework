@@ -239,11 +239,11 @@ alternate route are maintained in the
 
 ### Prepared Release Baseline
 
-The prepared release candidate is:
+The current approved release baseline is:
 
-- **Version:** 1.1.0 candidate
-- **Planned effective date:** 2026-08-22
-- **Expected repository version:** annotated tag `v1.1.0`
+- **Version:** 1.1.0
+- **Effective date:** 2026-08-22
+- **Repository version:** annotated tag `v1.1.0`
 - **Material changes:** recorded in the [changelog](CHANGELOG.md)
 - **Release record:** [version 1.1.0](project/releases/v1.1.0.md)
 - **Known limitations:** all examples are illustrative and not
@@ -252,7 +252,8 @@ The prepared release candidate is:
   human records, privacy, security, legal, knowledge-management, or
   business-continuity review; organizational use and broader governance have
   not been exercised
-- **Current public version until candidate publication:** 1.0.0
+- **Superseded public version:** 1.0.0, retained as an immutable historical
+  release
 - **Responsible steward:** Brad Groux
 - **Publication destination:**
   [`github.com/bradgroux/ai-native-operating-framework`](https://github.com/bradgroux/ai-native-operating-framework)
