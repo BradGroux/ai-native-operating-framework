@@ -51,6 +51,8 @@ If signing is required, use the configured signing mechanism and verify it befor
 pushing. Do not disable it to get a release through.
 
 ```sh
+(
+set -eu
 gh auth status --hostname github.com
 test "$(gh api --hostname github.com user --jq .login)" = BradGroux
 edition="$(cat VERSION)"
@@ -59,6 +61,7 @@ git tag -a "v$edition" -m "AI-Native Operating Framework v$edition"
 git push https://github.com/BradGroux/ai-native-operating-framework.git "refs/tags/v$edition"
 gh release create "v$edition" --repo BradGroux/ai-native-operating-framework --verify-tag --title "AI-Native Operating Framework v$edition" --notes-file "project/releases/v$edition.md"
 python3 scripts/release.py verify "$edition"
+)
 ```
 
 No uploaded assets are required. The verifier compares local/remote/API annotated

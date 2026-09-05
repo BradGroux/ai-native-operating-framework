@@ -94,9 +94,14 @@ a general CommonMark conformance claim. New link forms require review/tests.
 
 Independent baseline content/specification review confirmed the handoff defect,
 bounded-deferral ambiguity and solo-review improvement; standards review confirmed
-metadata mismatch. Final candidate review and checks will be recorded here before
-merge. Review is document and source analysis, not domain/practitioner validation.
-Candidate repository gate passed 13 focused tests, 82 Markdown documents,
+metadata mismatch. At candidate `db8e3d0`, the content/specification review found no material
+remaining issue and independently reviewed the release verifier. The standards
+review independently checked the main validator and historical preservation; it
+excluded the verifier it had authored. It found the publication block lacked a
+fail-fast shell boundary. A subshell with `set -eu` and a negative execution
+regression now prevent mutation after failed preflight. Both reviews suggested
+reusable current-edition fixtures; those now derive from VERSION. Review is document and source analysis, not domain/practitioner validation.
+Candidate repository gate passed 14 focused tests, 82 Markdown documents,
 418 local references, all 11 examples, 39 compiled/legibility-checked diagrams,
 CFF schema, workflow validation and working-tree/full-history redacted Gitleaks
 scans. No new diagram meaning or layout required visual inspection.

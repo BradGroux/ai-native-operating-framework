@@ -17,7 +17,9 @@ class ValidationTests(unittest.TestCase):
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
         self.root = Path(self.temp.name).resolve()
-        for name in v.REQUIRED_RELEASE_FILES + ['project/planning/status.md', 'project/releases/v2026.09.05.md']:
+        self.edition = (ROOT/"VERSION").read_text().strip()
+        self.released = "-".join(self.edition.split(".")[:3])
+        for name in v.REQUIRED_RELEASE_FILES + ['project/planning/status.md', f'project/releases/v{self.edition}.md']:
             source = ROOT / name
             if source.is_file():
                 target = self.root / name
@@ -36,19 +38,19 @@ class ValidationTests(unittest.TestCase):
         self.assertEqual(self.check(), [])
         for path in self.root.rglob('*'):
             if path.is_file():
-                text = path.read_text().replace('2026.09.05', '2028.02.29.2').replace('2026-09-05', '2028-02-29')
+                text = path.read_text().replace(self.edition, '2028.02.29.2').replace(self.released, '2028-02-29')
                 # Commons provenance is independent of product date.
                 text = text.replace('/tree/v2028.02.29.2', '/tree/v2026.09.05')
                 path.write_text(text)
-        (self.root/'project/releases/v2026.09.05.md').rename(self.root/'project/releases/v2028.02.29.2.md')
+        (self.root/f'project/releases/v{self.edition}.md').rename(self.root/'project/releases/v2028.02.29.2.md')
         self.assertEqual(self.check(), [])
 
     def test_cff_exact_scalar_not_prefix_or_comment(self):
         p=self.root/'CITATION.cff'; original=p.read_text()
-        for value in ['"2026.09.05.1"', '"2026.09.050"', '"wrong" # version: "2026.09.05"']:
-            p.write_text(original.replace('version: "2026.09.05"', 'version: '+value))
+        for value in [f'"{self.edition}.1"', f'"{self.edition}0"', f'"wrong" # version: "{self.edition}"']:
+            p.write_text(original.replace(f'version: "{self.edition}"', 'version: '+value))
             self.assertTrue(self.check())
-        p.write_text(original+'\nversion: "2026.09.05"\n')
+        p.write_text(original+f'\nversion: "{self.edition}"\n')
         self.assertTrue(self.check())
 
     def test_invalid_dates_and_missing_current_notes(self):
@@ -56,15 +58,36 @@ class ValidationTests(unittest.TestCase):
         for value in ['2026.02.30','2026.9.05','2026.09.05.0','2026.09.05.01','1.2.0']:
             p.write_text(value)
             self.assertTrue(self.check())
-        p.write_text('2026.09.05\n')
-        (self.root/'project/releases/v2026.09.05.md').unlink()
+        p.write_text(self.edition+'\n')
+        (self.root/f'project/releases/v{self.edition}.md').unlink()
         self.assertTrue(self.check())
 
     def test_stale_active_metadata_fails(self):
         for name in ['README.md','GOVERNANCE.md','CHANGELOG.md','project/planning/status.md','project/releases/README.md']:
-            p=self.root/name;old=p.read_text();p.write_text(old.replace('2026.09.05','1.1.0'))
+            p=self.root/name;old=p.read_text();p.write_text(old.replace(self.edition,'1.1.0'))
             self.assertTrue(self.check(), name)
             p.write_text(old)
+
+    def test_publish_runbook_stops_after_failed_preflight(self):
+        import os
+        import re
+        runbook = (ROOT/'project/RELEASING.md').read_text()
+        commands = next(block for block in re.findall(r'```sh\n(.*?)```', runbook, re.S)
+                        if 'gh release create' in block)
+        bindir = self.root/'bin'; bindir.mkdir()
+        log = self.root/'mutations'
+        stubs = {
+            'gh': '#!/bin/sh\nif [ "$1" = api ]; then echo BradGroux; fi\n',
+            'python3': '#!/bin/sh\nexit 1\n',
+            'git': '#!/bin/sh\necho mutation >> "$MUTATION_LOG"\n',
+        }
+        for name, body in stubs.items():
+            p=bindir/name; p.write_text(body); p.chmod(0o755)
+        result = subprocess.run(['bash','-c',commands], cwd=self.root,
+                                env=dict(os.environ, PATH=str(bindir)+os.pathsep+os.environ['PATH'],
+                                         MUTATION_LOG=str(log)), capture_output=True)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertFalse(log.exists(), 'Failed preflight must not tag or push')
 
     def test_unpublished_link_and_fenced_heading(self):
         subprocess.run(['git','init','-q',str(self.root)],check=True)
