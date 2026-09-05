@@ -100,7 +100,13 @@ review independently checked the main validator and historical preservation; it
 excluded the verifier it had authored. It found the publication block lacked a
 fail-fast shell boundary. A subshell with `set -eu` and a negative execution
 regression now prevent mutation after failed preflight. Both reviews suggested
-reusable current-edition fixtures; those now derive from VERSION. Review is document and source analysis, not domain/practitioner validation.
+reusable current-edition fixtures; those now derive from VERSION. The standards
+review rechecked `29c4608`, ran the six validator regressions and whitespace
+check, and confirmed the blocker resolved with no new material issue. The
+content review independently passed the prior 13-test suite and reviewed the
+verifier. The maintainer reran the full 14-test/render/scan gate after correction.
+[PR 28](https://github.com/BradGroux/ai-native-operating-framework/pull/28) carries
+these changes; issue 24 tracks final publication. Review is document and source analysis, not domain/practitioner validation.
 Candidate repository gate passed 14 focused tests, 82 Markdown documents,
 418 local references, all 11 examples, 39 compiled/legibility-checked diagrams,
 CFF schema, workflow validation and working-tree/full-history redacted Gitleaks
