@@ -2,7 +2,7 @@
 
 **Status:** Approved initial repository governance<br>
 **Founding steward:** Brad Groux<br>
-**Last reviewed:** 2026-08-22
+**Last reviewed:** 2026-09-05
 
 ## Purpose
 
@@ -44,9 +44,9 @@ by framework examples.
 
 The AI-Native Operating Framework adopts
 [Open Framework Commons](https://github.com/BradGroux/open-framework-commons)
-[`v1.1.0`](https://github.com/BradGroux/open-framework-commons/tree/v1.1.0),
+[`v2026.09.05`](https://github.com/BradGroux/open-framework-commons/tree/v2026.09.05),
 release commit
-[f25a2b89b4aed95984fd235e2e229efe52c125d8](https://github.com/BradGroux/open-framework-commons/commit/f25a2b89b4aed95984fd235e2e229efe52c125d8).
+[8868a248457dd7b663563beb243c5ebcbb8ac360](https://github.com/BradGroux/open-framework-commons/commit/8868a248457dd7b663563beb243c5ebcbb8ac360).
 Commons is shared ecosystem context, not a parent framework, certification,
 implementation layer, or governing authority over this framework.
 
@@ -54,15 +54,16 @@ The original accountable adoption is recorded in
 [ADR-008](decisions/0008-adopt-open-framework-commons-v1-0-0.md). The corrected
 release pin and release-integrity exception are recorded in
 [ADR-009](decisions/0009-correct-open-framework-commons-v1-0-0-release-pin.md).
-The current v1.1.0 adoption is recorded in
-[ADR-012](decisions/0012-adopt-open-framework-commons-v1-1-0.md).
+The historical v1.1.0 adoption remains in
+[ADR-012](decisions/0012-adopt-open-framework-commons-v1-1-0.md). Current adoption
+is recorded in [ADR-013](decisions/0013-calendar-editions-and-commons-adoption.md).
 
 | Disposition | AI-Native alignment |
 |---|---|
 | Adopted shared principles | All nine Commons principles are adopted: people first; own the method and rent the tool; play the long game; contribute before extracting; steward what matters; keep products independent; build in the open; learn honestly; and use technology as an amplifier. |
 | Product-local guidance | The charter, six concerns, eight SOP content areas, shared operating memory standard, six maintenance activities, terminology, examples, research, contribution process, governance, roadmap, releases, and implementation choices remain owned here. |
-| Deferred shared principles | None for Commons `v1.1.0`. |
-| Explicit deviations | None for Commons `v1.1.0`. |
+| Deferred shared principles | None for Commons `v2026.09.05`. |
+| Explicit deviations | None for Commons `v2026.09.05`. |
 
 The people-first principle means that people supply business purpose, judgment,
 and accountability. It does not narrow this framework's approved meaning of
@@ -216,18 +217,23 @@ example coverage, diagrams, release metadata, publication safety, and secret
 scanning through the repository's repeatable validation gate. Record any
 unavailable check and its consequence rather than representing it as passed.
 
-Beginning with version 1.1.0, releases use forward-only semantic versioning and
-published annotated tags are immutable. Backward-compatible documentation or
-metadata corrections use a patch version; backward-compatible additions or
-changes to governance, adopted ecosystem context, release scope, or framework
-capability use a minor version; incompatible framework meaning or requirements
-use a major version. The steward records the classification and rationale.
+New editions use `YYYY.MM.DD` based on actual UTC publication date, with
+annotated immutable tags `vYYYY.MM.DD`. Additional same-day editions use `.1`,
+`.2`, and so on in numeric order. Compare calendar editions chronologically by
+date and then numeric suffix, not as semantic versions or plain strings.
+The first calendar edition follows 1.1.0. No dated aliases are added to history.
 
-[ADR-011](decisions/0011-forward-only-semantic-versioning.md) governs this
-policy. [ADR-010](decisions/0010-same-version-documentation-republication.md)
-remains historical evidence for the bounded v1.0.0 republications but does not
-authorize a tag move from v1.1.0 forward. ADR-009 remains controlling history
-for the corrected Commons v1.0.0 pin.
+The date identifies content, not compatibility. Release notes separately state
+changed reader decisions, permissions, responsibilities, authority, obligations,
+and migration consequences. Narrowing an ambiguous permission can be substantive;
+a small diff is not necessarily editorial. A compatible addition preserves
+existing choices; new obligations or authority changes may be incompatible.
+Adopters assess that meaning before replacing their chosen edition.
+
+[ADR-013](decisions/0013-calendar-editions-and-commons-adoption.md) prospectively
+supersedes only ADR-011's semantic numbering rule. Its forward-only immutability
+remains. ADR-009, ADR-010, ADR-011 and historical releases retain their original
+claims and identities. Follow the [executable release procedure](project/RELEASING.md).
 
 The version 1.0.0 transition is recorded in the approved
 [prepublication release-hardening decision](project/planning/prepublication-release-hardening-decision-2026-07-30.md).
@@ -241,22 +247,47 @@ alternate route are maintained in the
 
 The current approved release baseline is:
 
-- **Version:** 1.1.0
-- **Effective date:** 2026-08-22
-- **Repository version:** annotated tag `v1.1.0`
+- **Version:** 2026.09.05
+- **Effective date:** 2026-09-05
+- **Repository version:** annotated tag `v2026.09.05`
 - **Material changes:** recorded in the [changelog](CHANGELOG.md)
-- **Release record:** [version 1.1.0](project/releases/v1.1.0.md)
+- **Release record:** [edition 2026.09.05](project/releases/v2026.09.05.md)
 - **Known limitations:** all examples are illustrative and not
   domain-validated; two source-bounded independent AI reviews of the shared
   operating memory extension are complete, but the standard has not received
   human records, privacy, security, legal, knowledge-management, or
   business-continuity review; organizational use and broader governance have
   not been exercised
-- **Superseded public version:** 1.0.0, retained as an immutable historical
+- **Superseded public version:** 1.1.0, retained as an immutable historical
   release
 - **Responsible steward:** Brad Groux
 - **Publication destination:**
   [`github.com/bradgroux/ai-native-operating-framework`](https://github.com/bradgroux/ai-native-operating-framework)
+
+## Commons interpretation and human boundaries
+
+The adopted nine principles are chosen commitments, not empirical guarantees.
+Contribution earns no entitlement to participation, access or reciprocity;
+legitimate help and accommodation need not be earned. Continuity permits
+responsible stopping and does not override consent. Openness authorizes no
+private disclosure: use an authorized safe summary or withhold the material.
+These shared boundaries do not replace local professional or business authority.
+
+For a conflict, identify the adopted Commons tag and commit, both statements,
+and the disputed action or representation. Pause that action while unrelated
+authorized work continues. Record safe evidence, uncertainty, accountable owner,
+and a reasoned decision through this repository's process. The product steward
+decides local method; Commons' steward decides Commons meaning. Neither role
+automatically supplies the other's authority. Resolve by correction, narrowed
+scope, stopping, explicit deviation, deferral, or a separately proposed Commons
+change. A deferral names a review time or concrete trigger; silence is not approval.
+An adoption with exceptions must say so and name affected guidance and rationale.
+
+Material local decisions distinguish chosen values, interpretations and claims
+about effects; identify support, limits, counterexamples, changed reader choices,
+and reconsideration triggers in the existing decision record. This does not
+import Commons' all-product review process or require a research dossier for
+editorial corrections. Fictional scenarios do not establish practical effectiveness.
 
 ## Conflicts and Appeals
 

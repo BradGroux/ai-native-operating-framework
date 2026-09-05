@@ -108,6 +108,8 @@ mermaid_input="$validation_temp/mermaid-diagrams.md"
 mermaid_output="$validation_temp/rendered-diagrams.md"
 mermaid_assets="$validation_temp/rendered-assets"
 
+python3 -m unittest discover -s tests
+
 python3 scripts/validate-repository.py --mermaid-document "$mermaid_input"
 
 yaml_files=(CITATION.cff)

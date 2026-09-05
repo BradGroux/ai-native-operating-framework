@@ -30,12 +30,12 @@
 
 ## Current focus
 
-Version 1.1.0 is the current approved release baseline. It adopts Open Framework
-Commons v1.1.0 at an exact immutable commit, corrects the process-application
-wording reported in issue 17, and replaces same-version republication with
-forward-only release tags under ADR-011. The
-[release record](../releases/v1.1.0.md) contains the complete scope,
-compatibility, verification, and limitation statement.
+Edition 2026.09.05 is the current release baseline. It independently adopts
+Commons v2026.09.05, clarifies failed handoffs and bounded deferrals, and starts
+calendar editions under ADR-013. See the [release record](../releases/v2026.09.05.md)
+and [audit disposition](../reviews/calendar-edition-audit-disposition-2026-09-05.md).
+The older checklist above records completed historical milestones, not current
+version policy. Publication is established by tag/release readback, not this file.
 
 Stage 2 delivery, migration, independent review, and owner approval remain
 complete. Tickets 01 through 14 meet their documented acceptance criteria. The

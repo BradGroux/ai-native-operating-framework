@@ -1,6 +1,6 @@
 # Shared Operating Memory Standard
 
-**Status:** Approved initial framework baseline<br>
+**Status:** Approved framework guidance; revised 2026-09-05<br>
 **Owner:** Brad Groux<br>
 **Effective date:** 2026-07-30<br>
 **Review triggers:** Material framework change, observed continuity failure,
@@ -407,6 +407,14 @@ Proportionately, it communicates:
 - sensitive handling or access requirements;
 - unresolved questions and their owners;
 - and the condition that constitutes acceptance of the handoff.
+
+Sending material does not transfer responsibility. The current owner retains
+ownership until the recipient accepts under the agreed condition or the
+accountable authority explicitly reassigns it. Rejection, inaccessible material,
+or no response leaves the transfer incomplete. Record the reason, current owner,
+next action, and a review time or event proportionate to urgency; escalate through
+the agreed route. Pause dependent work that cannot proceed safely while other
+authorized work may continue.
 
 A link alone is not a complete handoff when the recipient cannot determine why
 it matters, what changed, or what they are expected to do.

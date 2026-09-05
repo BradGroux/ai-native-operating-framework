@@ -8,8 +8,8 @@ authors:
 repository-code: "https://github.com/bradgroux/ai-native-operating-framework"
 url: "https://github.com/bradgroux/ai-native-operating-framework"
 license: MIT
-version: 1.1.0
-date-released: 2026-08-22
+version: "2026.09.05"
+date-released: 2026-09-05
 abstract: >-
   A business operating framework and method for defining, documenting,
   applying, and improving the standards, procedures, and shared operating

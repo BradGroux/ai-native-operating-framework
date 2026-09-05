@@ -1,6 +1,6 @@
 # Standard Operating Procedure Content Standard
 
-**Status:** Approved initial framework baseline<br>
+**Status:** Approved framework guidance; revised 2026-09-05<br>
 **Owner:** Brad Groux<br>
 **Date:** 2026-07-30
 
@@ -136,6 +136,11 @@ The SOP makes clear:
 - where material context, decisions, outputs, and current work state are
   recorded;
 - and how interrupted work can be resumed.
+
+For a handoff, identify acceptance and who retains responsibility if the
+recipient declines, cannot access the material, or does not respond. Sending
+an output alone does not establish acceptance. Define a proportionate review
+time or event and escalation path for an incomplete transfer.
 
 The procedure should be detailed enough to perform consistently without
 documenting obvious actions that add no business meaning.

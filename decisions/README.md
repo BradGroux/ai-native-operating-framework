@@ -26,3 +26,5 @@ real alternatives and non-obvious consequences. Routine content choices belong
 in the active specification or status record.
 
 Use the [decision record template](TEMPLATE.md) for a new proposal.
+
+13. [ADR-013 — Calendar editions and Commons adoption](0013-calendar-editions-and-commons-adoption.md)
