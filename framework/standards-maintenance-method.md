@@ -1,6 +1,6 @@
 # Standards Maintenance Method
 
-**Status:** Approved initial framework baseline<br>
+**Status:** Approved framework guidance; revised 2026-09-05<br>
 **Owner:** Brad Groux<br>
 **Date:** 2026-07-30
 
@@ -246,6 +246,10 @@ Walk through credible cases involving:
 - controls and evidence are proportionate;
 - and remaining limitations are visible to the approver.
 
+A deferral names the affected use, unresolved evidence or decision, accountable
+owner, and concrete review time or trigger. It is not permission to perform
+the disputed activity. Unaffected authorized work may continue.
+
 ### Output
 
 A reviewed draft and a record of issues resolved, deferred, or rejected.
@@ -266,6 +270,14 @@ Authorize the standard or SOP for business use.
 - establish maintenance ownership and review triggers;
 - record the decision and its authority in shared operating memory;
 - and communicate any implementation or transition conditions.
+
+An approver cannot waive a mandatory control, required professional review, or
+authority they do not hold by recording an accepted risk. If a required
+specialist is unavailable, use an authorized qualified alternate or hold the
+dependent approval and use; record an owner and revisit trigger. Approval for
+illustration or a bounded trial must state that scope and must not be presented
+as approval for unrestricted operational use. Missing required evidence stays
+unverified until supplied and checked.
 
 Approval should reflect the consequence of the work. A routine internal
 procedure may need one owner; higher-risk or regulated work may require several
@@ -378,7 +390,9 @@ rather than forcing incomplete work forward.
 The method scales with the work.
 
 For a low-risk routine, one person may understand, document, validate, approve,
-and maintain a short SOP with a lightweight peer review.
+and maintain a short SOP. Peer review is useful when it adds assurance; it is
+required when the risk or applicable policy calls for independent review, not
+merely because the framework is being used.
 
 For high-impact or regulated work, the same method may involve several
 practitioners, formal control review, scenario workshops, documented approvals,

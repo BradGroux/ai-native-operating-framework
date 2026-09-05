@@ -23,9 +23,9 @@ outside its documented contribution and governance processes.
 
 The current repository adopts
 [Open Framework Commons](https://github.com/BradGroux/open-framework-commons)
-[`v1.1.0`](https://github.com/BradGroux/open-framework-commons/tree/v1.1.0),
+[`v2026.09.05`](https://github.com/BradGroux/open-framework-commons/tree/v2026.09.05),
 release commit
-[f25a2b89b4aed95984fd235e2e229efe52c125d8](https://github.com/BradGroux/open-framework-commons/commit/f25a2b89b4aed95984fd235e2e229efe52c125d8),
+[8868a248457dd7b663563beb243c5ebcbb8ac360](https://github.com/BradGroux/open-framework-commons/commit/8868a248457dd7b663563beb243c5ebcbb8ac360),
 as shared ecosystem context.
 
 Commons supplies shared principles and boundaries; it is not a parent
@@ -104,12 +104,13 @@ requirements.
 
 ## Current Status
 
-Version 1.1.0 is the current owner-approved release, dated 2026-08-22. It adopts
-Commons v1.1.0, corrects the framework-application wording for new and existing
-business processes, and establishes forward-only release versioning. The
-charter, six concerns, eight SOP content areas, shared operating memory
-requirements, six maintenance activities, and human-accountability boundary
-remain unchanged.
+Version 2026.09.05 is the current edition, dated 2026-09-05. It adopts Commons
+v2026.09.05 independently, starts UTC calendar editions, distinguishes accepted
+handoffs from failed attempts, and bounds approval when mandatory review is
+unavailable. The charter, six concerns, eight SOP content areas, six maintenance
+activities, and human-accountability boundary remain intact. See the
+[release record](project/releases/v2026.09.05.md) for changed reader decisions
+and the [release procedure](project/RELEASING.md) for publication verification.
 
 - [Stage 2 specification](project/specifications/stage-2.md)
 - [Stage 2 completion report](project/reviews/stage-2-completion-review-2026-07-30.md)

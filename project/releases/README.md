@@ -8,3 +8,5 @@ published GitHub release identify the exact public commit.
 
 Version 1.0.0 and its documented republication history remain available in the
 [changelog](../../CHANGELOG.md) and GitHub release history.
+
+- [Edition 2026.09.05 — 2026-09-05](v2026.09.05.md)

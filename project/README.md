@@ -10,8 +10,8 @@ not additional framework requirements.
   specifications.
 - [`reviews/`](reviews/README.md) — completion and repository review records.
 - [`planning/`](planning/README.md) — context, questions, tickets, and status.
-- [`research/`](research/) — source-grounded research guidance and notes.
-- [`history/`](history/) — superseded material retained for provenance.
+- [`research/`](research/README.md) — source-grounded research guidance and notes.
+- [`history/`](history/README.md) — superseded material retained for provenance.
 - [`releases/`](releases/README.md) — approved release scope, compatibility,
   review limits, and verification records.
 

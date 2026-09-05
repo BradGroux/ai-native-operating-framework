@@ -2,6 +2,21 @@
 
 All material framework releases and repository changes will be recorded here.
 
+## 2026.09.05 — 2026-09-05
+
+- Start prospective UTC calendar editions; preserve all historical releases,
+  citations, reviews, decisions and adoption pins. Compatibility is assessed
+  separately from the date identifier.
+- Independently adopt Commons v2026.09.05 at its verified exact commit through
+  [ADR-013](decisions/0013-calendar-editions-and-commons-adoption.md).
+- Clarify accepted handoff versus failed attempt, retained ownership and next
+  escalation; prohibit treating absent mandatory review or authority as accepted
+  risk. Permit owner-led low-risk review unless independent review is required.
+- Add adverse decision cases, an audit disposition, exact metadata checks and
+  executable release preparation/readback with historical limits.
+- All examples remain illustrative and not domain-validated. Human specialist
+  review, practitioner evidence and organizational effectiveness remain absent.
+
 ## 1.1.0 — 2026-08-22
 
 ### Changed

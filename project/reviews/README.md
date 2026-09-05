@@ -68,3 +68,6 @@ Repository validation enforces the filename, status, date, controlled review
 role labels, and common identity-attribution forms. Publication-safety review
 must still inspect prose and tables because automation cannot infer every
 possible proper name or professionally material identity.
+
+- [Calendar edition audit disposition](calendar-edition-audit-disposition-2026-09-05.md)
+- [Calendar edition content cases](calendar-edition-content-test-2026-09-05.md)

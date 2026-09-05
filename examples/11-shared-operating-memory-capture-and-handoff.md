@@ -635,8 +635,11 @@ The procedure is complete for a memory change when:
 - the accepted version is identifiable and available to intended participants;
 - and unresolved exceptions have owners and do not violate a stop condition.
 
-For a handoff, completion also requires recipient acceptance or a recorded
-rejection and escalation.
+A successful handoff requires recipient acceptance. A recorded rejection and
+escalation closes the attempted transfer only; it does not complete the work
+or transfer ownership. The sender retains ownership until acceptance or an
+explicit reassignment by the accountable authority. If no response arrives by
+the locally agreed time, the sender escalates and records the next review time.
 
 ### Quality Expectations
 

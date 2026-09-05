@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+from datetime import date
 import html
 import re
 import subprocess
@@ -12,9 +13,6 @@ from pathlib import Path
 from urllib.parse import unquote
 
 REPOSITORY_ROOT = Path(__file__).resolve().parents[1]
-EXCLUDED_DIRECTORIES = {".git", ".venv", "node_modules"}
-CURRENT_RELEASE_VERSION = "1.1.0"
-CURRENT_RELEASE_DATE = "2026-08-22"
 
 EXPECTED_CONCERNS = [
     "Intent",
@@ -116,7 +114,8 @@ REQUIRED_RELEASE_FILES = [
     "SECURITY.md",
     "VERSION",
     "project/releases/README.md",
-    "project/releases/v1.1.0.md",
+    "project/RELEASING.md",
+    "scripts/release.py",
     "scripts/puppeteer-ci-config.json",
     "scripts/validate-repository.py",
     "scripts/validate-repository.sh",
@@ -143,6 +142,9 @@ EMAIL_PATTERN = re.compile(
     flags=re.IGNORECASE,
 )
 ALLOWED_PUBLIC_COMMIT_IDENTIFIERS = {
+    # Verified current Commons annotated tag and peeled commit
+    "67914a6e305768206f1ead83dfcbc4325b951168",
+    "8868a248457dd7b663563beb243c5ebcbb8ac360",
     # Open Framework Commons v1.0.0
     "a0f0d384e9010a65d1a21a324b4c912433d5e031",
     # Open Framework Commons v1.1.0 annotated tag object and peeled commit
@@ -228,16 +230,11 @@ class Validation:
 
 
 def repository_files(suffix: str | None = None) -> list[Path]:
-    files: list[Path] = []
-    for candidate in REPOSITORY_ROOT.rglob("*"):
-        if not candidate.is_file():
-            continue
-        if any(part in EXCLUDED_DIRECTORIES for part in candidate.parts):
-            continue
-        if suffix is not None and candidate.suffix.lower() != suffix:
-            continue
-        files.append(candidate)
-    return sorted(files)
+    result = subprocess.run(["git", "ls-files", "-z"], cwd=REPOSITORY_ROOT,
+                            check=True, capture_output=True)
+    files = [REPOSITORY_ROOT / name.decode("utf-8") for name in result.stdout.split(b"\0") if name]
+    return sorted(path for path in files if path.is_file() and not path.is_symlink()
+                  and (suffix is None or path.suffix.lower() == suffix))
 
 
 def git_publication_text_files() -> list[Path]:
@@ -285,7 +282,7 @@ def link_destination(raw_destination: str) -> str:
 
 
 def github_heading_anchors(markdown_path: Path) -> set[str]:
-    text = markdown_path.read_text(encoding="utf-8")
+    text = without_fenced_blocks(markdown_path.read_text(encoding="utf-8"))
     anchors: set[str] = set()
     duplicate_counts: dict[str, int] = {}
 
@@ -327,6 +324,7 @@ def github_heading_anchors(markdown_path: Path) -> set[str]:
 def validate_markdown_links(validation: Validation, markdown_files: list[Path]) -> None:
     anchor_cache: dict[Path, set[str]] = {}
     local_reference_count = 0
+    public_files = set(repository_files())
 
     for markdown_path in markdown_files:
         text = markdown_path.read_text(encoding="utf-8")
@@ -355,6 +353,10 @@ def validate_markdown_links(validation: Validation, markdown_files: list[Path]) 
                 )
                 continue
 
+            unresolved_target = markdown_path if not path_part else markdown_path.parent / path_part
+            if unresolved_target.is_symlink():
+                validation.errors.append(f"{relative(markdown_path)}: symlink link target is not publishable")
+                continue
             target_path = (
                 markdown_path
                 if not path_part
@@ -371,10 +373,10 @@ def validate_markdown_links(validation: Validation, markdown_files: list[Path]) 
                 )
                 continue
 
-            if not target_path.exists():
+            if target_path not in public_files:
                 validation.errors.append(
                     f"{relative(markdown_path)}:{line_number}: "
-                    f"missing local link target: {destination}"
+                    f"missing public local link target: {destination}"
                 )
                 continue
 
@@ -600,26 +602,42 @@ def validate_release_surface(validation: Validation) -> None:
         )
 
     version_path = REPOSITORY_ROOT / "VERSION"
-    if version_path.is_file():
-        version_text = version_path.read_text(encoding="utf-8").strip()
-        validation.require(
-            version_text == CURRENT_RELEASE_VERSION,
-            f"VERSION: expected {CURRENT_RELEASE_VERSION}, found {version_text}",
-        )
+    version = version_path.read_text(encoding="utf-8").strip() if version_path.is_file() else ""
+    match = re.fullmatch(r"(\d{4})\.(\d{2})\.(\d{2})(?:\.([1-9]\d*))?", version)
+    released = None
+    if match:
+        try:
+            released = date(*map(int, match.group(1, 2, 3))).isoformat()
+        except ValueError:
+            pass
+    validation.require(released is not None, "VERSION: expected a valid UTC calendar edition YYYY.MM.DD[.N]")
+    if released is None:
+        return
 
-    citation_text = (REPOSITORY_ROOT / "CITATION.cff").read_text(encoding="utf-8")
-    citation_requirements = [
-        "cff-version: 1.2.0",
-        "license: MIT",
-        f"version: {CURRENT_RELEASE_VERSION}",
-        f"date-released: {CURRENT_RELEASE_DATE}",
-        "https://github.com/bradgroux/ai-native-operating-framework",
-    ]
-    for requirement in citation_requirements:
-        validation.require(
-            requirement in citation_text,
-            f"CITATION.cff: missing release metadata: {requirement}",
-        )
+    citation_path = REPOSITORY_ROOT / "CITATION.cff"
+    citation_text = citation_path.read_text(encoding="utf-8") if citation_path.is_file() else ""
+    # Deliberately narrow scalar format; the full CFF schema is checked by cffconvert.
+    for key, expected in [("version", f'"{version}"'), ("date-released", released),
+                          ("cff-version", "1.2.0"), ("license", "MIT")]:
+        values = re.findall(rf"^{re.escape(key)}: (.+)$", citation_text, re.MULTILINE)
+        validation.require(values == [expected], f"CITATION.cff: expected exactly one current {key} scalar")
+
+    required_current = {
+        "README.md": f"Version {version} is the current edition, dated {released}.",
+        "GOVERNANCE.md": f"- **Version:** {version}\n- **Effective date:** {released}\n- **Repository version:** annotated tag `v{version}`",
+        "CHANGELOG.md": f"## {version} — {released}",
+        "project/planning/status.md": f"Edition {version} is the current release baseline.",
+        "project/releases/README.md": f"(v{version}.md)",
+        f"project/releases/v{version}.md": f"# AI-Native Operating Framework v{version}",
+    }
+    for name, expected in required_current.items():
+        path = REPOSITORY_ROOT / name
+        body = path.read_text(encoding="utf-8") if path.is_file() else ""
+        validation.require(expected in body, f"{name}: missing current edition metadata")
+    for name in ["README.md", "GOVERNANCE.md"]:
+        body = (REPOSITORY_ROOT / name).read_text(encoding="utf-8")
+        validation.require("8868a248457dd7b663563beb243c5ebcbb8ac360" in body and
+                           "/tree/v2026.09.05" in body, f"{name}: current Commons adoption identity missing")
 
     workflow_path = REPOSITORY_ROOT / ".github/workflows/validate-release.yml"
     if workflow_path.is_file():
@@ -638,7 +656,7 @@ def validate_release_surface(validation: Validation) -> None:
 
     validation.pass_result(
         f"Release surface: {len(REQUIRED_RELEASE_FILES)} required files and "
-        f"version {CURRENT_RELEASE_VERSION} metadata checked"
+        f"edition {version} metadata checked"
     )
 
 
